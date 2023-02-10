@@ -1,0 +1,37 @@
+@startuml
+
+class SpecifyNewEmployeeUI
+class SpecifyNewEmployeeController
+class Employee
+class Company
+
+class SpecifyNewEmployeeController {
++createNewEmployee(name, addres, phone number, e-mail, citizen card number, occupation)
++saveNewEmployee()
+}
+
+class Company {
+-designation
++registerNewEmployee(name, addres, phone number, e-mail, citizen card number, role)
+-registerNewNurse(name, addres, phone number, e-mail, citizen card number)
+-registerNewReceptionist(name, addres, phone number, e-mail, citizen card number)
+-registerNewCenterCoordinator(name, addres, phone number, e-mail, citizen card number)
++validateEmployee(Employee employee)
++addEmployee(Employee employee)
+}
+
+class Employee {
+-name
+-address
+-phone number
+-e-mail
+-citizen card number
+}
+
+SpecifyNewEmployeeUI .u-> SpecifyNewEmployeeController
+SpecifyNewEmployeeController .-> Company
+Company "1" -> "1..*" Employee : has >
+
+
+
+@enduml

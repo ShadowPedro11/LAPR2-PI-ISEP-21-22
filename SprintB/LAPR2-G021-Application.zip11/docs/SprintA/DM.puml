@@ -1,0 +1,86 @@
+@startuml
+
+'class enumeration
+class Organization
+class VaccinationCenter
+class CenterCoordinator
+class VaccinationEvent
+class Nurse
+class VaccinationCenterReceptionist
+class HealthCareCenterReceptionist
+class VaccinationCertificate
+class User
+class WaitingRoom
+class RecoveryRoom
+class HealthCareCenter
+class VaccinationCertificate
+class Notification
+class EmailNotification extends Notification
+class SMSNotification extends Notification
+class VaccineType
+class VaccineSchedule
+class Vaccine
+
+'class componets
+class User {
+-name
+-Age
+-sex
+-SNS number
+}
+
+class VaccinationCenter{
+-name
+-addres
+-phone number
+-e-mail addres
+-fax number
+-website addres
+-opening hours
+-closing hours
+-slot duration
+-maximum number of vaccines
+-coordinator
+}
+
+class VaccinationEvent {
+-name
+-brand
+-type
+-age groups
+-vaccines per age group
+-dosage
+-time interval regarding previous vaccine administered
+}
+
+class Organization {
+-name
+}
+
+'class relation
+Organization "1" -- "*" VaccinationCenter : owns >
+Organization "1" -- "*" HealthCareCenter : manages >
+CenterCoordinator "1" -- "*" Organization : works for >
+CenterCoordinator "1" -- "*" VaccinationCenter : controls >
+Nurse "1..*" -- "1" VaccinationCenter : works in >
+Nurse "1..*" -- "*" VaccinationEvent : performs >
+VaccinationCenterReceptionist "1..*" -- "1" VaccinationCenter : works in >
+VaccinationCenterReceptionist "1..*" -- "*" User : register arrival >
+HealthCareCenterReceptionist "1" -- "*" HealthCareCenter : works in >
+HealthCareCenterReceptionist "1..*" -- "*" VaccineSchedule : schedules >
+User "1" -- "*" VaccineSchedule : schedules >
+VaccinationCenterReceptionist "1..*" -- "*" WaitingRoom : sends patient to >
+VaccinationCertificate "1" -- "1" VaccinationEvent : validates >
+Nurse "1..*" -- "*" RecoveryRoom : sends patient to >
+User "1" -- "1" Notification : recieves >
+VaccinationCertificate "1" -- "1" User : created for >
+User "1" -- "1..*" VaccinationEvent : administered to <
+RecoveryRoom "1..*" -- "*" User : for resting >
+Vaccine "1..*" -- "1..*" VaccineType : is of >
+VaccinationCenter "1..*" -- "*" VaccineType : can administer >
+Vaccine "1..*" -- "*" VaccinationEvent : of >
+VaccinationEvent "1..*" -- "1..*" VaccineSchedule : fullfiling >
+WaitingRoom "1" -- "1..*" User : for >
+VaccineSchedule "1" -- "1" VaccineType : for taking >
+
+@enduml

@@ -1,0 +1,125 @@
+@startuml
+
+'class enumeration
+class Organization
+class VaccinationCenter
+class CenterCoordinator <<Sprint_B>> extends Employee
+class VaccinationEvent
+class Employee <<Sprint_B>>
+class Nurse <<Sprint_B>> extends Employee
+class VaccinationCenterReceptionist <<Sprint_B>> extends Employee
+class HealthCareCenterReceptionist
+class VaccinationCertificate
+class User
+class WaitingRoom
+class RecoveryRoom
+class HealthCareCenter
+class VaccinationCertificate
+class Notification
+class EmailNotification extends Notification
+class SMSNotification extends Notification
+class VaccineSchedule
+class Vaccine
+class Administrator <<Sprint_B>>
+
+skinparam class {
+BackgroundColor<<SprintB>> Tomato
+}
+
+'class componets
+class User {
+-name
+-Age
+-sex
+-SNS number
+}
+
+class VaccinationCenter {
+-name
+-addres
+-phone number
+-e-mail addres
+-fax number
+-website addres
+-opening hours
+-closing hours
+-slot duration
+-maximum number of vaccines
+-coordinator
+}
+
+class Vaccine {
+-name
+-brand
+-type
+-age groups
+-vaccines per age group
+-dosage
+-time interval regarding previous vaccine administered
+}
+
+class Organization {
+-name
+}
+
+'class relation
+'Old
+'Organization -d- VaccinationCenter : owns >
+'Organization -d- HealthCareCenter : **owns** >
+'CenterCoordinator -u- Organization : works for >
+'CenterCoordinator -- VaccinationCenter : creates relatories of >
+'Administrator -- Organization : works for >
+'Administrator -- Vaccine : can specify new >
+'Employee -- VaccinationCenter : works for >
+'Nurse -- Vaccine : administer >
+'VaccinationCenterReceptionist -- VaccineSchedule : checks for >
+'HealthCareCenterReceptionist -- HealthCareCenter : works for >
+'HealthCareCenterReceptionist -- VaccineSchedule : schedules >
+'VaccineSchedule -- User : schedules <
+'VaccineSchedule -- VaccinationEvent : fullfiling >
+'Vaccine -- VaccinationEvent : of >
+'VaccinationCenterReceptionist -- WaitingRoom : send patient to >
+'Nurse -- RecoveryRoom : sends patient to >
+'User -- Notification : recieves >
+'User -- VaccinationCertificate : can request >
+'RecoveryRoom -- User : for >
+'RecoveryRoom -- VaccinationCenter : from >
+'WaitingRoom -- User : for >
+'WaitingRoom -- VaccinationCenter : from >
+'VaccinationCenter -- Vaccine : contains >
+
+
+Organization "1" -- "*" VaccinationCenter : owns >
+Organization "1" -- "*" HealthCareCenter : **owns** >
+Administrator "1" -- "1..*" Employee : **registers** >
+CenterCoordinator "1" -- "*" VaccinationCenter : **creates relatories of** >
+Administrator "1" -- "1" Organization : **works for** >
+Administrator "1" -- "1..*" Vaccine : **can specify new** >
+Employee "1..*" -- "1" VaccinationCenter : **works for** >
+Nurse "1" -- "1..*" Vaccine : **administer** >
+VaccinationCenterReceptionist "1" -- "1" VaccineSchedule : **checks for** >
+HealthCareCenterReceptionist "1..*" -- "1" HealthCareCenter : **works for** >
+HealthCareCenterReceptionist "1..*" -- "*" VaccineSchedule : schedules >
+VaccinationEvent "1" -- "1" VaccineSchedule : fullfiling >
+Vaccine "1" -- "1" VaccinationEvent : of >
+User "1" -- "1" VaccineSchedule : schedules >
+Nurse "1..*" -- "*" VaccinationEvent : **performs** >
+VaccinationCenterReceptionist "1..*" -- "1" WaitingRoom : sends patient to >
+VaccinationCertificate "1" -- "1" VaccinationEvent : validates >
+Nurse "1..*" -- "1" RecoveryRoom : sends patient to >
+User "1" -- "1" Notification : recieves >
+User "1" -- "1" VaccinationCertificate : **can request** >
+RecoveryRoom "1" -- "*" User : **for** >
+RecoveryRoom "1" -- "1" VaccinationCenter : from >
+WaitingRoom "1" -- "1..*" User : for >
+WaitingRoom "1" -- "1" VaccinationCenter : from >
+VaccinationCenter "1" -- "1..*" Vaccine : contains >
+
+
+
+
+
+
+
+
+@enduml

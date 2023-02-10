@@ -1,0 +1,36 @@
+ @startuml
+'https://plantuml.com/sequence-diagram
+
+class VaccinationCenterUI
+class VaccinationCenterController{
++createVaccinationCenter(name, address, phone number, e-mail addres, fax number, website addres, opening hours, closing hours, slot duration, maximum number of vaccines, coordinator)
++saveVaccinationCenter()
+}
+class Company{
+-name
++createVaccinationCenter(name, address, phone number, e-mail addres, fax number, website addres, opening hours, closing hours, slot duration, maximum number of vaccines, coordinator)
++validateVaccinationCenter(vc)
++saveVaccinationCenter(vc)
+-addVaccinationCenter(vc)
+}
+class VaccinationCenter{
+-name
+-addres
+-phone number
+-e-mail addres
+-fax number
+-website addres
+-opening hours
+-closing hours
+-slot duration
+-maximum number of vaccines
+-coordinator
++VaccinationCenter(name, address, phone number, e-mail addres, fax number, website addres, opening hours, closing hours, slot duration, maximum number of vaccines, coordinator)
+}
+
+VaccinationCenterUI .-> VaccinationCenterController
+VaccinationCenterController .-r> Company
+VaccinationCenterController .-r> VaccinationCenter
+Company "1"--r>"*" VaccinationCenter: "owns"
+
+@enduml
