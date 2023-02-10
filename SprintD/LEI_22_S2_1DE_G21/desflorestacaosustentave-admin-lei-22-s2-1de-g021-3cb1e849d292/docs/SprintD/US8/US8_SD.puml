@@ -1,0 +1,178 @@
+@startuml
+autonumber
+'hide footbox
+actor "Nurse" as NR
+
+participant "NurseUI" as NUI
+participant "RecordAdministrationVaccineToUserUI" as UI
+participant "RecordAdministrationVaccineToUserController" as CTRL
+participant "RecordAdministrationVaccineToUserController2" as CTRL2
+participant "VaccinationEventStore" as VE_STR
+participant "SnsUserStore" as SU_STR
+participant "WaitingRoom" as WR
+participant "VaccineScheduleStore" as VS_STR
+participant "VaccineType" as VT
+participant "RecoveryRoom" as RR
+participant "Company" as CP
+participant "VaccinationEvent" as VE
+participant "SnsUserVaccineSchedule" as SVS
+
+
+
+activate NR
+
+NR -> NUI : selects option to record the administration of a vaccine to a SNS User
+
+activate NUI
+
+NUI -> UI : opens "RecordAdministrationVaccineToUserUI" in a JavaFX window
+
+deactivate NUI
+activate UI
+
+UI --> NR : requests SNS user number
+
+deactivate UI
+
+NR -> UI : types requested data
+
+NR -> UI : presses the "Press Here To See The User's Data" button
+
+activate UI
+
+UI -> CTRL : seeUserData()
+
+activate CTRL
+
+CTRL -> SU_STR : verifies if user exists
+
+activate SU_STR
+
+deactivate SU_STR
+
+CTRL -> WR : verifies if user is in waiting room
+
+activate WR
+
+deactivate WR
+
+CTRL -> SU_STR : requests name and age of the user
+
+activate SU_STR
+
+deactivate SU_STR
+
+deactivate CTRL
+
+UI --> NR : shows the user´s name and age
+
+deactivate UI
+
+NR -> UI : presses the "Press Here To Confirm" button
+
+activate UI
+
+UI -> CTRL : confirmationButton()
+activate CTRL
+
+CTRL -> SU_STR : verifies if user exists
+
+activate SU_STR
+
+deactivate SU_STR
+
+CTRL -> WR : verifies if user is in waiting room
+
+activate WR
+
+deactivate WR
+
+CTRL -> SVS : gets user vaccine schedule
+
+activate SVS
+
+
+deactivate SVS
+
+CTRL -> VT : gets vaccineType
+
+activate VT
+
+
+deactivate VT
+
+CTRL -> CP : gets listOfVaccines
+
+activate CP
+
+deactivate CP
+
+CTRL -> VE_STR : sends listOfVaccines for storage
+
+CTRL -> VE_STR : sends snsUserNumber and vaccineType for storage
+
+CTRL -> CTRL2 : opens new JavaFX window and switches to "RecordAdministrationVaccineToUserController2"
+
+activate CTRL2
+deactivate CTRL
+
+CTRL2 -> VE_STR : requests listOfVaccines
+
+activate VE_STR
+
+deactivate VE_STR
+
+deactivate CTRL2
+
+UI --> NR : requests the vaccine that the user has taken and its lot number
+
+deactivate UI
+
+NR -> UI : types requested data
+
+NR -> UI : presses the "Press Here To Confirm" button
+
+activate UI
+
+UI -> CTRL2 : loadVaccines()
+
+deactivate UI
+activate CTRL2
+
+CTRL2 -> VE_STR : gets the correct vaccine dose number
+
+activate VE_STR
+
+deactivate VE_STR
+
+CTRL2 -> WR : removes users data from "WaitingRoom"
+
+CTRL2 -> RR : adds users data to "RecoveryRoom"
+
+CTRL2 -> VE_STR : sends vaccineLotNumberFinal, currentVaccine and vaccineDoseNumber for storage
+
+CTRL2 -> VE_STR : requests the creation of a new Vaccination Event
+
+activate VE_STR
+
+VE_STR -> VE_STR : gets all the data and makes a VaccinationEvent and adds it to vaccinationEventList
+
+deactivate VE_STR
+
+CTRL2 -> VE_STR : starts 30 minute timer to inform the user when he can leave the "RecoveryRoom"
+
+deactivate CTRL2
+activate VE_STR
+|||
+
+VE_STR -> VE_STR : timer ends
+
+|||
+
+VE_STR -> VE_STR : sends message to user to inform he can leave the "RecoveryRoom"
+
+VE_STR -> RR : removes data from "RecoveryRoom"
+
+deactivate VE_STR
+
+@enduml

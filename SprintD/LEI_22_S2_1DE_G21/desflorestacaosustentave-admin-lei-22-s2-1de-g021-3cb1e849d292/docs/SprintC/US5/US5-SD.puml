@@ -1,0 +1,50 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor Nurse
+activate Nurse
+Nurse -> CheckWaitingRoomUI : Starts the option to consult the users in the waiting room
+activate CheckWaitingRoomUI
+CheckWaitingRoomUI -> CheckWaitingRoomController : getWaitingRoom(currentVC)
+activate CheckWaitingRoomController
+CheckWaitingRoomController -> WaitingRoom : getWaitingRoom(currentVC)
+activate WaitingRoom
+WaitingRoom --> CheckWaitingRoomController : returns list of the users in the waiting room
+deactivate WaitingRoom
+
+loop while list of the users in the waiting room has users
+CheckWaitingRoomController -> SNSUserMapper : toDto()
+activate SNSUserMapper
+create SNSUserDto
+SNSUserMapper -> SNSUserDto : toDto(SNSUser)
+deactivate SNSUserMapper
+end
+
+CheckWaitingRoomController --> CheckWaitingRoomUI :Returns the list of the users in the waiting room
+deactivate CheckWaitingRoomController
+
+alt list with users in the waiting room isn't empty
+loop while (waitingRoom has SNSUsers)
+CheckWaitingRoomUI -> CheckWaitingRoomController : getSNSUserName(snsUserDto)
+activate CheckWaitingRoomController
+CheckWaitingRoomController -> SNSUserDto : getName()
+activate SNSUserDto
+SNSUserDto -->  CheckWaitingRoomController : returns SNSUser's name
+deactivate SNSUserDto
+CheckWaitingRoomController --> CheckWaitingRoomUI : returns SNSUser's name
+
+note over CheckWaitingRoomUI
+gets all the other wanted atributtes of the SNSUser (sex, birth date, SNS number, phone number)
+end note
+
+deactivate CheckWaitingRoomController
+end
+CheckWaitingRoomUI --> Nurse : Returns the list of the users in the waiting room
+
+else list with users in the waiting room is empty
+CheckWaitingRoomUI --> Nurse : Message: "There are no users on the waiting room."
+end
+deactivate CheckWaitingRoomUI
+@enduml

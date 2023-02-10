@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor "Center Coordinator" as CC
+participant ":System" as S
+
+activate CC
+CC->S: Starts the feature of Check and Export Vaccination Statistics
+activate S
+S-->CC: Request data(start day, end day)
+deactivate S
+CC-> S:Types requested data
+activate S
+S-->CC: Show the Vaccination Statistics
+S-->CC: Ask the user to export data
+deactivate S
+CC->S: Selects the answer(ok/cancel)
+activate S
+alt answer = yes
+S--->CC: Ask for the name that will be given to the file
+deactivate S
+CC->S: Types the requested data
+activate S
+end
+activate S
+S--> CC: informs operation (in)Success
+deactivate S
+
+
+@enduml

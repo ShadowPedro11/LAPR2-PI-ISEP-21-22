@@ -1,0 +1,215 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor "Center Coordinator" as CC
+participant "ImportDataLegacySystemUI" as UI
+participant "ImportDataLegacySystemController" as Control
+''participant "snsUserStore: SNSUserStore" as snsUserStore
+participant "dataLegacySystemStore : DataLegacySystemStore" as dataLegacySystemStore
+participant "dto : DataLegacySystemDto" as dto
+
+activate CC
+CC -> UI : Starts the import of the data
+activate UI
+UI --> CC : Asks for the file's path
+deactivate UI
+
+CC -> UI : Types the file's path
+activate UI
+UI -> Control : enter()
+activate Control
+Control -> Company : dataLegacySystemStore = getDataLegacySystemStore()
+activate Company
+deactivate Company
+
+Control -> dataLegacySystemStore : setCompany(company)
+
+activate dataLegacySystemStore
+dataLegacySystemStore -> Company : getSNSUserStore()
+activate Company
+deactivate Company
+
+dataLegacySystemStore -> Company : getCurrentVCOfCC()
+activate Company
+deactivate Company
+
+dataLegacySystemStore -> Company : getCurrentVC()
+activate Company
+deactivate Company
+
+dataLegacySystemStore -> Company : getWaitingRoom()
+activate Company
+deactivate Company
+
+dataLegacySystemStore -> Company : getRecoveryRoom()
+activate Company
+deactivate Company
+deactivate dataLegacySystemStore
+
+Control -> dataLegacySystemStore : validatePathToCSV(pathToCSV)
+activate dataLegacySystemStore
+dataLegacySystemStore -> dataLegacySystemStore : validatePathToCSV(pathToCSV)
+activate dataLegacySystemStore
+deactivate dataLegacySystemStore
+deactivate dataLegacySystemStore
+deactivate Control
+
+UI --> CC : Comfirms that the file exists
+deactivate UI
+
+CC -> UI : Confirms that wants to import
+activate UI
+UI -> Control : switchToScene2()
+activate Control
+deactivate Control
+UI --> CC : Asks for the sorting and presenting type
+
+deactivate UI
+CC -> UI : Selects the sorting and presenting type
+activate UI
+UI -> Control : sortingTypeArrLea = getSortingTypeArrivalLeaving()
+activate Control
+deactivate Control
+
+UI -> Control : sortingTypeAscDes = getSortingTypeAscendDescend()
+activate Control
+deactivate Control
+UI -> Control : sortData()
+activate Control
+Control -> dataLegacySystemStore : read()
+activate dataLegacySystemStore
+dataLegacySystemStore -> dataLegacySystemStore : verifyCSVType(pathToCSV)
+activate dataLegacySystemStore
+deactivate dataLegacySystemStore
+
+loop for every line in the CSV file
+dataLegacySystemStore -> dataLegacySystemStore : verifySNSUserNumber(snsUserNumber)
+activate dataLegacySystemStore
+deactivate dataLegacySystemStore
+dataLegacySystemStore -> dataLegacySystemStore : verifyIfSNSUserIsRegistered(snsUserNumber)
+activate dataLegacySystemStore
+deactivate dataLegacySystemStore
+dataLegacySystemStore -> dataLegacySystemStore : verifyVaccineName(vaccineName)
+activate dataLegacySystemStore
+deactivate dataLegacySystemStore
+dataLegacySystemStore -> dataLegacySystemStore : verifyDose(dose)
+activate dataLegacySystemStore
+deactivate dataLegacySystemStore
+dataLegacySystemStore -> dataLegacySystemStore : verifyLotNumber(lotNumber)
+activate dataLegacySystemStore
+deactivate dataLegacySystemStore
+
+alt all the data passes the verifications
+create dto
+dataLegacySystemStore -> dto : userVaccinationData = new DataLegacySystemStore(snsNumber, vaccineName, dose, lotNumber, scheduledDateTime, arrivalDateTime, nurseAdministrationDateTime, leavingDateTime)
+dataLegacySystemStore -> dataLegacySystemStore : userVaccinationDataList.add(userVaccinationData)
+
+end
+end
+deactivate dataLegacySystemStore
+
+Control -> Control : props = getProperties()
+activate Control
+deactivate Control
+
+Control -> Control : nameOfAlgorithm = props.getProperty("NameOfAlgorithm")
+activate Control
+deactivate Control
+
+alt nameOfAlgorithm = bubbleSort
+
+alt sortingTypeArrLea = arrival and sortingTypeAscDes = ascendant
+Control -> dataLegacySystemStore : bubbleSortingAlgorithmArrivalDateTimeAscendant()
+activate dataLegacySystemStore
+deactivate dataLegacySystemStore
+
+
+else sortingTypeArrLea = arrival and sortingTypeAscDes = descendant
+Control -> dataLegacySystemStore : bubbleSortingAlgorithmArrivalDateTimeDescendant()
+activate dataLegacySystemStore
+deactivate dataLegacySystemStore
+
+
+else sortingTypeArrLea = leaving and sortingTypeAscDes = ascendant
+Control -> dataLegacySystemStore : bubbleSortingAlgorithmLeavingDateTimeAscendant()
+activate dataLegacySystemStore
+deactivate dataLegacySystemStore
+
+
+else sortingTypeArrLea = leaving and sortingTypeAscDes = descendant
+Control -> dataLegacySystemStore : bubbleSortingAlgorithmLeavingDateTimeDescendant()
+activate dataLegacySystemStore
+deactivate dataLegacySystemStore
+end
+
+else nameOfAlgorithm = selectionSort
+
+alt sortingTypeArrLea = arrival and sortingTypeAscDes = ascendant
+Control -> dataLegacySystemStore : selectionSortingAlgorithmArrivalDateTimeAscendant()
+activate dataLegacySystemStore
+deactivate dataLegacySystemStore
+
+
+else sortingTypeArrLea = arrival and sortingTypeAscDes = descendant
+Control -> dataLegacySystemStore : selectionSortingAlgorithmArrivalDateTimeDescendant()
+activate dataLegacySystemStore
+deactivate dataLegacySystemStore
+
+
+else sortingTypeArrLea = leaving and sortingTypeAscDes = ascendant
+Control -> dataLegacySystemStore : selectionSortingAlgorithmLeavingDateTimeAscendant()
+activate dataLegacySystemStore
+deactivate dataLegacySystemStore
+
+
+else sortingTypeArrLea = leaving and sortingTypeAscDes = descendant
+Control -> dataLegacySystemStore : selectionSortingAlgorithmLeavingDateTimeDescendant()
+activate dataLegacySystemStore
+deactivate dataLegacySystemStore
+end
+
+end
+
+Control -> Control : printList()
+activate Control
+
+Control -> dataLegacySystemStore : everthingToString()
+activate dataLegacySystemStore
+
+loop for every userVaccinationData
+dataLegacySystemStore -> dto : toString(snsUserStore, company)
+activate dto
+deactivate dto
+
+end
+
+deactivate dataLegacySystemStore
+
+Control -> dataLegacySystemStore : addToWaitingAndRecoveryRoomRegisters()
+activate dataLegacySystemStore
+
+loop for every userVaccinationData
+
+dataLegacySystemStore -> WaitingRoom : addToWaitingRoom(snsUser, date, time)
+activate WaitingRoom
+deactivate WaitingRoom
+
+dataLegacySystemStore -> RecoveryRoom : addToRecoveryRoomRegisters(snsUser, date, time)
+activate RecoveryRoom
+deactivate RecoveryRoom
+
+end
+
+deactivate dataLegacySystemStore
+
+deactivate Control
+
+Control --> UI : Shows the data sorted
+deactivate Control
+
+UI --> CC : Shows the data sorted
+deactivate UI
+
+@enduml

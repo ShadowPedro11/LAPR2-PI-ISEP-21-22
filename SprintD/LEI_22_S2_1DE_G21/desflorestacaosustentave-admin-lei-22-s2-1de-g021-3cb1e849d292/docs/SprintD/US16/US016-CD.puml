@@ -1,0 +1,83 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Company
+class VaccinationCenter
+class WaitingRoom
+class RecoveryRoom
+class AnalyzeCenterPerformanceUI
+class AnalyzeCenterPerformanceDateAndIntervalController
+class AnalyzeCenterPerformanceCreateAnalysisController
+class AnalyzeCenterPerformanceStore
+
+class AnalyzeCenterPerformanceDateAndIntervalController {
+-validateDate()
+-setMinutesPerInterval()
+-getDate()
+-switchToScene2()
+}
+
+class AnalyzeCenterPerformanceCreateAnalysisController {
+-back()
+-confirm()
+}
+
+class Company {
++getAnalyzeCenterPerformanceStore ()
+}
+
+class WaitingRoom {
++getArrivalTime()
++getArrivalDate(LocalDate date)
++checkIfAnyoneEntered(LocalDate date)
+}
+
+class RecoveryRoom {
++getLeavingTime(LocalDate date)
+}
+
+class VaccinationCenter {
++getWaitingRoom()
++getRecoveryRoom()
+}
+
+class AnalyzeCenterPerformanceStore {
+-minutesPerInterval
+-intervals
+-date
+-setVaccinationCenter
+-waitingRoom
+-recoveryRoom
+
++setMinutesPerInterval(minutesPerInterval)
+-setIntervals(minutesPerInterval)
++checkDayForAnalysis()
+-setVaccinationCenter()
+-setWaitingRoom()
+-setRecoveryRoom()
++createAnalysis()
++saveDifferenceBetweenInAndOut(ArrivalTime, LeavingTime)
+-chooseAlgorithm()
++intArrayToString(array)
++getIntervalsString()
++getSum()
++subListString()
+}
+
+AnalyzeCenterPerformanceUI .-> AnalyzeCenterPerformanceDateAndIntervalController
+AnalyzeCenterPerformanceUI .-> AnalyzeCenterPerformanceCreateAnalysisController
+
+AnalyzeCenterPerformanceDateAndIntervalController .-> Company
+
+AnalyzeCenterPerformanceCreateAnalysisController .-> Company
+AnalyzeCenterPerformanceCreateAnalysisController .-> AnalyzeCenterPerformanceStore
+
+AnalyzeCenterPerformanceStore .-> VaccinationCenter
+AnalyzeCenterPerformanceStore .-> WaitingRoom
+AnalyzeCenterPerformanceStore .-> RecoveryRoom
+
+
+
+
+
+@enduml

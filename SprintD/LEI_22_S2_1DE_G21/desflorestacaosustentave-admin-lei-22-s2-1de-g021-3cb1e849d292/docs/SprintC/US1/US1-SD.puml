@@ -1,0 +1,178 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+autonumber
+actor "SNS user" AS USR
+participant SnsUserVaccineScheduleUI as UI
+participant SnsUserVaccineScheduleController as CTRL
+participant ":Company" as CMP
+participant "store:VaccineScheduleStore" as STR
+participant ":dto SnsUserVaccineScheduleDTO" as DTO
+participant App as APP
+participant "store:SnsUserStore" as SNSSTR
+participant MassVaccinationCenter as MVC
+
+activate USR
+USR -> UI: starts scheduling a vaccine
+activate UI
+UI --> USR: request data (SnsUserNumber)
+deactivate UI
+USR -> UI: types the requested data
+activate UI
+deactivate CTRL
+UI -> CTRL: chkUser = checkSnsUserNumber(SnsUserNumber)
+activate CTRL
+CTRL -> STR:chkUser = checkSnsUserNumber(SnsUserNumber)
+activate STR
+STR -> SNSSTR: snsUserList = getUserList()
+activate SNSSTR
+deactivate SNSSTR
+STR -> APP: currentUserEmail = getEmail()
+activate APP
+deactivate APP
+STR -> STR :checker = checker(SnsUserNumber,SnsUserList,currentUserEmail)
+activate STR
+deactivate STR
+deactivate STR
+deactivate CTRL
+alt checker=true
+UI --> USR: Show the data and request a confirmation
+deactivate UI
+USR -> UI:  Confirms the data
+activate UI
+UI -> CTRL: vcList = getVacciantionCenterList()
+activate CTRL
+CTRL -> CMP: vcList = getVacciantionCenterList()
+activate CMP
+deactivate CMP
+deactivate CTRL
+UI --> USR: Show a list of Vaccination Center available
+deactivate UI
+USR -> UI: Select a Vaccination Center
+activate UI
+alt VaccinationCenter instance of MassVaccinationCenter
+UI -> CTRL: vt = getVaccineTypesForMassVaccinationCenter(vc)
+activate CTRL
+
+CTRL -> MVC:vt=getVaccineTypesForMassVaccinationCenter(vt)
+activate MVC
+deactivate MVC
+deactivate STR
+deactivate CTRL
+else VaccinationCenter instance of HealthCareCenter
+UI -> CTRL: vtList = getVaccineTypesList()
+activate CTRL
+CTRL -> CMP: vtList = getVaccineTypesList()
+activate CMP
+deactivate CMP
+deactivate CTRL
+
+UI --> USR: Show a list of Vaccine Type available
+end
+deactivate UI
+USR -> UI: Select a Vaccine Type
+activate UI
+
+UI --> USR: request data (day)
+deactivate UI
+USR -> UI: types the requested data
+activate UI
+UI -> CTRL: chekDayDateRules(day)
+activate CTRL
+CTRL -> STR: chekDayDateRules(day)
+activate STR
+STR -> STR: isLapYear()
+alt isLapYear = true
+activate STR
+deactivate STR
+STR -> STR:verifieDateParametersInLapYear(dayy, month)
+activate STR
+deactivate STR
+else isLapYear = false
+STR -> STR:verifieDateParametersInNormalYear(dayy, month)
+activate STR
+deactivate STR
+end
+deactivate  STR
+deactivate CTRL
+UI --> USR: Show the data and request a confirmation
+deactivate UI
+USR -> UI:  Confirms the data
+activate UI
+
+
+
+
+
+
+
+
+
+
+
+
+UI -> CTRL: hr = readHour(vc,vt,day)
+activate CTRL
+CTRL -> CMP: hr = readHour(vc,vt,day)
+activate CMP
+deactivate CMP
+deactivate CTRL
+
+UI --> USR: Show the hours available to schedule the vaccine
+deactivate UI
+USR -> UI: Select an hour
+activate UI
+
+
+UI -> CTRL: createVaccinationSchedule(SnsUserNumber,vc,vt,day,hr)
+activate CTRL
+CTRL -> CMP: store = getVaccineScheduleStore()
+activate CMP
+deactivate CMP
+CTRL -> STR: vcSkd = createVaccinationSchedule(SnsUserNumber,vc,vt,day,hr)
+activate STR
+STR -> ":vcSks: VaccinationSchedule"**: create(SnsUserNumber,vc,vt,day,hr)
+deactivate STR
+CTRL -> STR: validateVaccinationSchedule(vcSkd)
+activate STR
+STR -> STR: checkDupicates(vcSkd)
+activate STR
+deactivate STR
+deactivate STR
+deactivate CTRL
+UI --> USR: Shows the data and requests a confirmation
+deactivate UI
+USR -> UI: confirms the data
+activate UI
+UI -> CTRL: saveVaccinationSchedule()
+activate CTRL
+CTRL -> STR:saveVaccinationSchedule(vcSkd)
+activate STR
+STR -> STR: validateVaccinationSchedule(vcSkd)
+activate STR
+deactivate STR
+STR -> STR: addVaccinationSchedule(vcSkd)
+activate STR
+deactivate STR
+deactivate STR
+deactivate CTRL
+UI --> USR: Ask the user to receive a sms whit schedule data informations
+deactivate UI
+USR -> UI: Types the answer(yes/no)
+activate UI
+alt answer = yes
+UI -> CTRL:sendMessage(snsUserNumber, vc, vt, day, hr)
+activate CTRL
+CTRL -> STR:sendMessage(snsUserNumber, vc, vt, day, hr)
+activate STR
+STR -> "sms.txt"**: exports SMS data
+
+deactivate "sms.txt"
+deactivate STR
+deactivate CTRL
+
+
+end
+UI --> USR: confirms operation success
+deactivate UI
+end
+@enduml

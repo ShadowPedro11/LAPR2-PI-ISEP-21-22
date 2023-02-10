@@ -1,0 +1,78 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class VaccineType
+class Company
+class VaccinationEvent
+class SnsUserVaccineSchedule
+class NurseUI
+class RecordAdministrationVaccineToUserUI
+
+class VaccineScheduleStore {
+  + getSnsUserVaccineShcheduleList()
+}
+
+class RecordAdministrationVaccineToUserController2 {
+  + loadVaccines()
+  + initialize()
+}
+
+class WaitingRoom {
+  + isInWaitingRoom(snsUserNumber)
+  + removeFromWaitingRoom()
+}
+
+class VaccinationEventStore {
+  + saveSnsUserVaccineSchedule()
+  + setListOfVaccines()
+  + saveDataForVaccinationEvent(snsUserNumber, vaccineType)
+}
+
+class SnsUserStore {
+  + getUserBySNSNumber(snsUserNumber)
+}
+
+class RecordAdministrationVaccineToUserController {
+    - snsUserNumber
+
+  + verifyIfUserExists()
+  + verifyIfUserIsInWaitingRoom()
+  + checkTheVaccineType()
+  + giveAllVaccines()
+  + confirmationButton()
+  + seeUserData()
+  + switchToScene2()
+}
+
+class RecoveryRoom{
+  + addToRecoveryRoom()
+}
+
+NurseUI ..> RecordAdministrationVaccineToUserUI
+
+RecordAdministrationVaccineToUserUI ..> RecordAdministrationVaccineToUserController
+
+RecordAdministrationVaccineToUserController ..> SnsUserStore
+RecordAdministrationVaccineToUserController ..> WaitingRoom
+RecordAdministrationVaccineToUserController ..> RecordAdministrationVaccineToUserController2
+RecordAdministrationVaccineToUserController ..> VaccinationEventStore
+RecordAdministrationVaccineToUserController ..> VaccineType
+RecordAdministrationVaccineToUserController ..> VaccineScheduleStore
+RecordAdministrationVaccineToUserController ..> Company
+RecordAdministrationVaccineToUserController ..> SnsUserVaccineSchedule
+
+RecordAdministrationVaccineToUserController2 ..> WaitingRoom
+RecordAdministrationVaccineToUserController2 ..> SnsUserStore
+RecordAdministrationVaccineToUserController2 ..> VaccinationEventStore
+RecordAdministrationVaccineToUserController2 ..> RecoveryRoom
+RecordAdministrationVaccineToUserController2 ..> Company
+RecordAdministrationVaccineToUserController2 ..> VaccineScheduleStore
+RecordAdministrationVaccineToUserController2 ..> SnsUserVaccineSchedule
+
+VaccinationEventStore ..> VaccineType
+VaccinationEventStore ..> RecoveryRoom
+VaccinationEventStore ..> SnsUserStore
+VaccinationEventStore ..> VaccinationEvent
+VaccinationEventStore ..> SnsUserVaccineSchedule
+
+@enduml

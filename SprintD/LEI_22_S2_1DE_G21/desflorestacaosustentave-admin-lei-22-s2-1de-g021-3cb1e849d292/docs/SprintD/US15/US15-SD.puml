@@ -1,0 +1,120 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor "Center Coordinator" as CC
+participant "CheckAndExportUI" as UI
+participant "CheckAndExportController" as CTRL
+participant Company as CMP
+participant "CheckAndExportStore" as STR
+participant VaccinationEventStore as VESTR
+participant App as App
+participant "app: App" as app2
+participant "session :UserSession" as SESSION
+
+
+activate CC
+CC->UI: Starts the feature of Check and Export Vaccination Statistics
+activate UI
+UI-->CC: Request data(start day, end day)
+deactivate UI
+CC-> UI:Types requested data
+activate UI
+UI->CTRL: getVaccinationStatistics()
+activate CTRL
+CTRL->CMP: VaccinationEventStore = getVaccinationEventStore()
+activate CMP
+deactivate CMP
+CTRL->VESTR: vaccinationEventList = getVaccinationEventList()
+activate VESTR
+deactivate VESTR
+CTRL -> CMP : CheckAndExportStore = getCheckAndExportStore()
+activate CMP
+deactivate CMP
+CTRL->STR: checkIntervalTimeRules(dayInitial, dayEnd)
+activate STR
+STR->STR:chekDayDateRules(dayInitial)
+activate STR
+activate STR
+STR -> STR: isLapYear()
+alt isLapYear = true
+activate STR
+deactivate STR
+STR -> STR:verifieDateParametersInLapYear(dayy, month)
+activate STR
+deactivate STR
+else isLapYear = false
+STR -> STR:verifieDateParametersInNormalYear(dayy, month)
+activate STR
+deactivate STR
+deactivate STR
+deactivate STR
+end
+
+STR->STR:chekDayDateRules(dayEnd)
+activate STR
+activate STR
+STR -> STR: isLapYear()
+alt isLapYear = true
+activate STR
+deactivate STR
+STR -> STR:verifieDateParametersInLapYear(dayy, month)
+activate STR
+deactivate STR
+else isLapYear = false
+STR -> STR:verifieDateParametersInNormalYear(dayy, month)
+activate STR
+deactivate STR
+deactivate STR
+deactivate STR
+end
+STR->STR: checkInterval(dayInitial,dayEnd)
+activate STR
+deactivate STR
+deactivate STR
+deactivate STR
+
+CTRL->STR: getText(dayInitial,dayEnd)
+activate STR
+
+activate STR
+STR->App:app=getInstance()
+activate App
+deactivate App
+STR-> app2: session = getCurrentUserSession()
+activate app2
+deactivate app2
+STR-> SESSION: email= getUserID.getEmail()
+activate SESSION
+deactivate SESSION
+STR->STR:doListOfStatistics(vaccinationEventList,dayInitial,dayEnd,email)
+activate STR
+deactivate STR
+deactivate STR
+deactivate STR
+deactivate CTRL
+UI-->CC: Show the Vaccination Statistics
+UI-->CC: Ask the user to export data
+deactivate UI
+CC->UI: Selects the answer(ok/cancel)
+activate UI
+alt answer = yes
+UI--->CC: Ask for the name that will be given to the file
+deactivate UI
+CC->UI: Types the requested data
+activate UI
+UI->CTRL:saveToFile(file,text)
+activate CTRL
+CTRL->STR:saveSystem(file,text)
+activate STR
+STR-> name.csv**: create .csv file
+deactivate STR
+deactivate CTRL
+end
+activate UI
+UI--> CC: informs operation (in)Success
+deactivate UI
+
+
+@enduml

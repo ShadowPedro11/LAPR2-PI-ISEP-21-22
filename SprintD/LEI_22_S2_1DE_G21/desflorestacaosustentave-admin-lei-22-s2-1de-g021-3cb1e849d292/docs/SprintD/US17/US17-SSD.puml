@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor "Center Coordinator" as CC
+participant ":System" as S
+
+activate CC
+CC -> S : Starts the import of the data
+activate S
+S --> CC : Asks for the file's path
+deactivate S
+CC -> S : Types the file's path
+activate S
+S --> CC : Confirms that the file exists
+deactivate S
+CC -> S : Confirms that wants to import
+activate S
+S --> CC : Asks for the sorting and presenting type
+deactivate S
+CC -> S : Selects the sorting and presenting type
+activate S
+S --> CC : Shows the data sorted
+deactivate S
+
+
+
+@enduml

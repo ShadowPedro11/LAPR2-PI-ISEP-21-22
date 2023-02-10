@@ -1,0 +1,48 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class CheckAndExportUI{}
+
+class CheckAndExportController{
++getVaccinationStatistics()
++saveToFile(file,text)
+}
+
+class CheckAndExportStore{
++checkIntervalTimeRules(dayInitial,dayEnd)
++getText(dayInitial,dayEnd)
++saveSystem(file,text)
+-checkDayRules(dayInitial)
+-isLapYear(year)
+-verifieDateParametersInLapYear(dayy,month)
+-verifieDateParametersInNormalYear(dayy,month)
+-checkDayInterval(dayInitial,dayEnd)
+-doListOfVaccinationStatistics(getVaccinationEventList,dayEnd,dayEnd,email)
+}
+
+class Company{
++getVaccinationEventStore()
++getCheckAndExportStore
+}
+
+class VaccinationEventStore{
++getVaccinationEventList
+}
+
+class App{
++getInstance()
++getCurrentUserSession()
++getUserID()
++getEmail()
+}
+
+CheckAndExportUI.-->CheckAndExportController
+
+CheckAndExportController.-->Company
+CheckAndExportController.-->VaccinationEventStore
+CheckAndExportController.-->CheckAndExportStore
+
+CheckAndExportStore.-->App
+
+
+@enduml

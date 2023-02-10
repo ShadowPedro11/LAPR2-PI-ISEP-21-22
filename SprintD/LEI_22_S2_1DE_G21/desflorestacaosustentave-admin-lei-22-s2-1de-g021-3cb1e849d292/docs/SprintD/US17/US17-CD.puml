@@ -1,0 +1,138 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class ImportDataLegacySystemUI
+class ImportDataLegacySystemController
+class DataLegacySystemStore
+class DataLegacySystemDto
+class Company
+class WaitingRoom
+class RecoveryRoom
+class Vaccine
+class VaccineType
+class CenterCoordinator
+class VaccinationCenter
+class SNSUserStore
+
+class ImportDataLegacySystemController{
++enter()
++validatePathToCSV()
++actionNoButton()
++switchToScene2()
++back()
++getSortingTypeArrivalLeaving()
++getSortingTypeAscendDescend()
++getProperties()
++printList()
++sortData()
+}
+
+class DataLegacySystemStore{
+-pathToCSV
+-company
+-snsUserStore
+-numberUserSuccessfullyRegistered
+-totalNumberOfUsersData
+-userVaccinationDataList
+-currentVC
+-waitingRoom
+-recoveryRoom
+
++setCompany(company)
++verifiyCSVType(pathToCSV)
++read()
++verifyIfSNSUserIsRegistered(snsUserNumber)
++verifySNSUserNumber(snsUserNumber)
++verifyVaccineName(vaccineName)
++verifyDose(dose, vaccineName, snsNumber)
++verifyLotNumber(lotNumber)
++getTotalNumberOfUsersData()
++getNumberUserSuccessfullyRegistered()
++splitDateTime(date, index)
++selectionSortingAlgorithmArrivalDateTimeAscendant()
++selectionSortingAlgorithmArrivalDateTimeDescendant()
++selectionSortingAlgorithmLeavingDateTimeAscendant()
++selectionSortingAlgorithmLeavingDateTimeDescendant()
++bubbleSortingAlgorithmArrivalDateTimeAscendant()
++bubbleSortingAlgorithmArrivalDateTimeDescendant()
++bubbleSortingAlgorithmLeavingDateTimeAscendant()
++bubbleSortingAlgorithmLeavingDateTimeDescendant()
++checkIfUserWasInWaitingRoom(snsUser)
++checkIfUserWasInRecoveryRoom(snsUser)
++addToWaitingAndRecoveryRoomRegisters()
++validatePathToCSV(pathToCSV)
++everythingToString()
+}
+
+class DataLegacySystemDto{
+    - snsNumber;
+    - vaccineName;
+    - dose;
+    - lotNumber;
+    - scheduledDateTime;
+    - arrivalDateTime;
+    - nurseAdministrationDateTime;
+    - leavingDateTime;
+}
+
+class Company{
+-designation
+
++getSNSUserStore()
++getDataLegacySystemStore()
++getCurrentVCOfCC()
++getCurrentVC()
++getVaccineByName(vaccineName)
+}
+
+class SNSUserStore{
++getUserBySNSNumber(snsUserNumber)
+}
+
+class Vaccine{
++getType()
+}
+
+class VaccineType{
++getDescription()
+}
+
+class VaccinationCenter{
++getWaitingRoom()
++getRecoveryRoom()
+}
+
+class WaitingRoom{
++getWasInWaitingRoom()
++getArrivalDate()
++addToWaitingRoom(snsUser, date, time)
+}
+
+class RecoveryRoom{
++getWasInRecoveryRoom()
++getLeavingDate()
++addToRecoveryRoomRegisters(snsUser, date, time)
+}
+
+ImportDataLegacySystemUI .-> ImportDataLegacySystemController
+
+ImportDataLegacySystemController .-> DataLegacySystemStore
+ImportDataLegacySystemController .-> Company
+
+
+DataLegacySystemStore .-> DataLegacySystemDto
+DataLegacySystemStore .-> Company
+DataLegacySystemStore .-> SNSUserStore
+
+DataLegacySystemDto .-> Company
+DataLegacySystemDto .-> SNSUserStore
+
+Company --> VaccinationCenter
+Company --> Vaccine
+Company --> VaccineType
+Company --> CenterCoordinator
+
+VaccinationCenter --> WaitingRoom
+VaccinationCenter --> RecoveryRoom
+
+@enduml

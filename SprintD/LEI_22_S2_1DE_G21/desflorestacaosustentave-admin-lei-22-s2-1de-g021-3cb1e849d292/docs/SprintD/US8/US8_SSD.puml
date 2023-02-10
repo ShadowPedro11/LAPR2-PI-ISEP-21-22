@@ -1,0 +1,30 @@
+@startuml
+autonumber
+actor "Nurse" as NR
+
+activate NR
+NR -> ":System" : selects option to record the administration of a vaccine to a SNS User
+
+activate ":System"
+":System" --> NR : requests SNS user number
+deactivate ":System"
+
+NR -> ":System" : types requested data
+
+NR -> ":System" : presses the "Press Here To See The User's Data" button
+activate ":System"
+":System" --> NR : shows the user´s name and age
+deactivate ":System"
+
+NR -> ":System" : presses the "Press Here To Confirm" button
+activate ":System"
+":System" --> NR : requests the vaccine that the user has taken and its lot number
+deactivate ":System"
+
+NR -> ":System" : types requested data
+
+NR -> ":System" : presses the "Press Here To Confirm" button
+
+deactivate NR
+
+@enduml

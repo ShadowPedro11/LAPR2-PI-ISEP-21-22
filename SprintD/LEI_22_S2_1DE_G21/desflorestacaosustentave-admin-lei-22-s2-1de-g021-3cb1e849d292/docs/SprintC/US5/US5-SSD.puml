@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor Nurse
+activate Nurse
+
+Nurse -> ":System" : Starts the option to consult the users in the waiting room
+activate ":System"
+
+alt list with users in the waiting room isn't empty
+":System" --> Nurse : Returns the list of the users in the waiting room
+else list with users in the waiting room is empty
+":System" --> Nurse : Message: "There are no users on the waiting room."
+end
+
+deactivate ":System"
+
+@enduml

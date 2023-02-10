@@ -1,0 +1,59 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Company {
+-name
+}
+
+class SNSUser {
+-name
+-sex
+-Birth Date
+-Address
+-Phone number
+-E-mail
+-SNS number
+-Citizen card number
+}
+
+class SNSUserVaccineSchedule {
+- SNS number
+- Vaccination Center
+- Vaccine Type
+- Day
+- Hour
+}
+
+class VaccinationEvent{
+}
+
+abstract Employee {
+-Name
+-Address
+-Phone number
+-E-mail
+-Citizen card number
+}
+class HealthCareCenter extends VaccinationCenter{
+-ARG/AGES
+}
+class MassVaccinationCenter extends VaccinationCenter{
+-VaccineType
+}
+class CenterCoordinator extends Employee
+
+
+
+
+SNSUser "1..*" -- "1..*" SNSUserVaccineSchedule : can shedule >
+SNSUserVaccineSchedule "1" -- "1" VaccinationEvent : fullfilling >
+Company "1" -- "*" SNSUser : has >
+CenterCoordinator "1" -- "1" VaccinationCenter : responsible for >
+CenterCoordinator "1" -- "1..*" Company : elaborate relatories to >
+VaccinationCenter "1..*" -- "1..*" SNSUser : recieves >
+
+
+
+
+
+@enduml

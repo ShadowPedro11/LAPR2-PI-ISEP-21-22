@@ -1,0 +1,66 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+class SNSUser {
+-name
+-sex
+-Birth Date
+-Addresss
+-Phone number
+-E-mail
+-SNS number
+-Citizen card number
+}
+class VaccinationCenter {
+-name
+-addres
+-phone number
+-e-mail addres
+-fax number
+-website addres
+-opening hours
+-closing hours
+-slot duration
+-maximum number of vaccines
+-coordinator
+}
+class HealthCareCenter extends VaccinationCenter{
+-ARG/AGES
+}
+class MassVaccinationCenter extends VaccinationCenter{
+-VaccineType
+}
+
+class Notification
+
+class VaccineSchedule{
+-snsUserNumber
+-vaccinationCenter
+-vaccineType
+-day
+-hour
+}
+class VaccineType {
+-Code
+-Description
+-Technology
+}
+class VaccinationEvent
+class EmailNotification extends Notification
+class SMSNotification extends Notification
+
+
+
+VaccinationCenter "1..*" -- "1..*" VaccineType :  where is administered >
+SNSUser "1..*" -- "1..*" VaccineType : recieves >
+SNSUser "1..*" -- "1..*" Notification : recieves >
+SNSUser "1..*" -- "1..*" VaccineSchedule : can shedule >
+VaccineSchedule "1" -- "1" VaccineType : to get >
+VaccineSchedule "1" -- "1" VaccinationEvent : fullfilling >
+
+
+
+
+
+
+
+@enduml

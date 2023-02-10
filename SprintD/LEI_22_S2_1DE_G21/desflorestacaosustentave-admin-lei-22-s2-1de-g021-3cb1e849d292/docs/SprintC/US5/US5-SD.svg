@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="740px" preserveAspectRatio="none" style="width:1388px;height:740px;background:#FFFFFF;" version="1.1" viewBox="0 0 1388 740" width="1388px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="557.0703" style="stroke:#181818;stroke-width:1.0;" width="10" x="36.5" y="92.6094"/><rect fill="#FFFFFF" height="533.7188" style="stroke:#181818;stroke-width:1.0;" width="10" x="404.5" y="114.9609"/><rect fill="#FFFFFF" height="196.3672" style="stroke:#181818;stroke-width:1.0;" width="10" x="722.5" y="145.3125"/><rect fill="#FFFFFF" height="91.0547" style="stroke:#181818;stroke-width:1.0;" width="10" x="722.5" y="422.7344"/><rect fill="#FFFFFF" height="30.3516" style="stroke:#181818;stroke-width:1.0;" width="10" x="1013.5" y="175.6641"/><rect fill="#FFFFFF" height="30.3516" style="stroke:#181818;stroke-width:1.0;" width="10" x="1131.5" y="261.7188"/><rect fill="#FFFFFF" height="30.3516" style="stroke:#181818;stroke-width:1.0;" width="10" x="1310.5" y="453.0859"/><rect height="91.3125" style="stroke:#000000;stroke-width:1.5;fill:none;" width="754" x="617.5" y="221.0156"/><rect height="285" style="stroke:#000000;stroke-width:1.5;fill:none;" width="1371.5" x="10" y="356.6797"/><rect height="176.1094" style="stroke:#000000;stroke-width:1.5;fill:none;" width="1263.5" x="108" y="382.0313"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="41" x2="41" y1="82.6094" y2="658.6797"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="409.5" x2="409.5" y1="82.6094" y2="658.6797"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="727.5" x2="727.5" y1="82.6094" y2="658.6797"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="1018.5" x2="1018.5" y1="82.6094" y2="658.6797"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="1136.5" x2="1136.5" y1="82.6094" y2="658.6797"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="1315.5" x2="1315.5" y1="301.0234" y2="658.6797"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="20" y="79.5332">Nurse</text><ellipse cx="41.5" cy="13.5" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M41.5,21.5 L41.5,48.5 M28.5,29.5 L54.5,29.5 M41.5,48.5 L28.5,63.5 M41.5,48.5 L54.5,63.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="20" y="672.2129">Nurse</text><ellipse cx="41.5" cy="683.7891" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M41.5,691.7891 L41.5,718.7891 M28.5,699.7891 L54.5,699.7891 M41.5,718.7891 L28.5,733.7891 M41.5,718.7891 L54.5,733.7891 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="150" x="334.5" y="50"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136" x="341.5" y="71.5332">CheckWaitingRoomUI</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="150" x="334.5" y="657.6797"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136" x="341.5" y="679.2129">CheckWaitingRoomUI</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="200" x="627.5" y="50"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="186" x="634.5" y="71.5332">CheckWaitingRoomController</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="200" x="627.5" y="657.6797"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="186" x="634.5" y="679.2129">CheckWaitingRoomController</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="98" x="969.5" y="50"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="976.5" y="71.5332">WaitingRoom</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="98" x="969.5" y="657.6797"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="976.5" y="679.2129">WaitingRoom</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="118" x="1077.5" y="50"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="1084.5" y="71.5332">SNSUserMapper</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="118" x="1077.5" y="657.6797"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="1084.5" y="679.2129">SNSUserMapper</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="92" x="1269.5" y="657.6797"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="1276.5" y="679.2129">SNSUserDto</text><rect fill="#FFFFFF" height="557.0703" style="stroke:#181818;stroke-width:1.0;" width="10" x="36.5" y="92.6094"/><rect fill="#FFFFFF" height="533.7188" style="stroke:#181818;stroke-width:1.0;" width="10" x="404.5" y="114.9609"/><rect fill="#FFFFFF" height="196.3672" style="stroke:#181818;stroke-width:1.0;" width="10" x="722.5" y="145.3125"/><rect fill="#FFFFFF" height="91.0547" style="stroke:#181818;stroke-width:1.0;" width="10" x="722.5" y="422.7344"/><rect fill="#FFFFFF" height="30.3516" style="stroke:#181818;stroke-width:1.0;" width="10" x="1013.5" y="175.6641"/><rect fill="#FFFFFF" height="30.3516" style="stroke:#181818;stroke-width:1.0;" width="10" x="1131.5" y="261.7188"/><rect fill="#FFFFFF" height="30.3516" style="stroke:#181818;stroke-width:1.0;" width="10" x="1310.5" y="453.0859"/><polygon fill="#181818" points="392.5,110.9609,402.5,114.9609,392.5,118.9609,396.5,114.9609" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="46.5" x2="398.5" y1="114.9609" y2="114.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="53.5" y="110.1045">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="328" x="64.5" y="110.1045">Starts the option to consult the users in the waiting room</text><polygon fill="#181818" points="710.5,141.3125,720.5,145.3125,710.5,149.3125,714.5,145.3125" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="414.5" x2="716.5" y1="145.3125" y2="145.3125"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="421.5" y="140.4561">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="162" x="432.5" y="140.4561">getWaitingRoom(currentVC)</text><polygon fill="#181818" points="1001.5,171.6641,1011.5,175.6641,1001.5,179.6641,1005.5,175.6641" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="732.5" x2="1007.5" y1="175.6641" y2="175.6641"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="739.5" y="170.8076">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="162" x="750.5" y="170.8076">getWaitingRoom(currentVC)</text><polygon fill="#181818" points="743.5,202.0156,733.5,206.0156,743.5,210.0156,739.5,206.0156" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="737.5" x2="1017.5" y1="206.0156" y2="206.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="749.5" y="201.1592">4</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="246" x="760.5" y="201.1592">returns list of the users in the waiting room</text><path d="M617.5,221.0156 L690.5,221.0156 L690.5,229.3672 L680.5,239.3672 L617.5,239.3672 L617.5,221.0156 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="91.3125" style="stroke:#000000;stroke-width:1.5;" width="754" x="617.5" y="221.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="28" x="632.5" y="235.5107">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="298" x="705.5" y="234.4346">[while list of the users in the waiting room has users]</text><polygon fill="#181818" points="1119.5,257.7188,1129.5,261.7188,1119.5,265.7188,1123.5,261.7188" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="732.5" x2="1125.5" y1="261.7188" y2="261.7188"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="739.5" y="256.8623">5</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="39" x="750.5" y="256.8623">toDto()</text><polygon fill="#181818" points="1257.5,288.0703,1267.5,292.0703,1257.5,296.0703,1261.5,292.0703" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="1136.5" x2="1263.5" y1="292.0703" y2="292.0703"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="1143.5" y="287.2139">6</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="1154.5" y="287.2139">toDto(SNSUser)</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="92" x="1269.5" y="269.7188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="1276.5" y="291.252">SNSUserDto</text><polygon fill="#181818" points="425.5,337.6797,415.5,341.6797,425.5,345.6797,421.5,341.6797" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="419.5" x2="726.5" y1="341.6797" y2="341.6797"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="431.5" y="336.8232">7</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="273" x="442.5" y="336.8232">Returns the list of the users in the waiting room</text><path d="M10,356.6797 L71,356.6797 L71,365.0313 L61,375.0313 L10,375.0313 L10,356.6797 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="285" style="stroke:#000000;stroke-width:1.5;" width="1371.5" x="10" y="356.6797"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="16" x="25" y="371.1748">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="263" x="86" y="370.0986">[list with users in the waiting room isn't empty]</text><path d="M108,382.0313 L181,382.0313 L181,390.3828 L171,400.3828 L108,400.3828 L108,382.0313 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="176.1094" style="stroke:#000000;stroke-width:1.5;" width="1263.5" x="108" y="382.0313"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="28" x="123" y="396.5264">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="201" x="196" y="395.4502">[while (waitingRoom has SNSUsers)]</text><polygon fill="#181818" points="710.5,418.7344,720.5,422.7344,710.5,426.7344,714.5,422.7344" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="414.5" x2="716.5" y1="422.7344" y2="422.7344"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="421.5" y="417.8779">8</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="182" x="432.5" y="417.8779">getSNSUserName(snsUserDto)</text><polygon fill="#181818" points="1298.5,449.0859,1308.5,453.0859,1298.5,457.0859,1302.5,453.0859" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="732.5" x2="1304.5" y1="453.0859" y2="453.0859"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="7" x="739.5" y="448.2295">9</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="750.5" y="448.2295">getName()</text><polygon fill="#181818" points="743.5,479.4375,733.5,483.4375,743.5,487.4375,739.5,483.4375" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="737.5" x2="1314.5" y1="483.4375" y2="483.4375"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="749.5" y="478.5811">10</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="767.5" y="478.5811">returns SNSUser's name</text><polygon fill="#181818" points="425.5,509.7891,415.5,513.7891,425.5,517.7891,421.5,513.7891" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="419.5" x2="726.5" y1="513.7891" y2="513.7891"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="431.5" y="508.9326">11</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="449.5" y="508.9326">returns SNSUser's name</text><path d="M118,526.7891 L118,552.7891 L700,552.7891 L700,536.7891 L690,526.7891 L118,526.7891 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M690,526.7891 L690,536.7891 L700,536.7891 L690,526.7891 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="561" x="124" y="545.2842">gets all the other wanted atributtes of the SNSUser (sex, birth date, SNS number, phone number)</text><polygon fill="#181818" points="57.5,583.4922,47.5,587.4922,57.5,591.4922,53.5,587.4922" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="51.5" x2="403.5" y1="587.4922" y2="587.4922"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="63.5" y="582.6357">12</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="273" x="81.5" y="582.6357">Returns the list of the users in the waiting room</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="10" x2="1381.5" y1="596.4922" y2="596.4922"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="249" x="15" y="607.9111">[list with users in the waiting room is empty]</text><polygon fill="#181818" points="57.5,629.6797,47.5,633.6797,57.5,637.6797,53.5,633.6797" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="51.5" x2="403.5" y1="633.6797" y2="633.6797"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="14" x="63.5" y="628.8232">13</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="300" x="81.5" y="628.8232">Message: "There are no users on the waiting room."</text><!--MD5=[c4269fb6df46dbbe0e82553da96c08bb]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor Nurse
+activate Nurse
+Nurse -> CheckWaitingRoomUI : Starts the option to consult the users in the waiting room
+activate CheckWaitingRoomUI
+CheckWaitingRoomUI -> CheckWaitingRoomController : getWaitingRoom(currentVC)
+activate CheckWaitingRoomController
+CheckWaitingRoomController -> WaitingRoom : getWaitingRoom(currentVC)
+activate WaitingRoom
+WaitingRoom - -> CheckWaitingRoomController : returns list of the users in the waiting room
+deactivate WaitingRoom
+
+loop while list of the users in the waiting room has users
+CheckWaitingRoomController -> SNSUserMapper : toDto()
+activate SNSUserMapper
+create SNSUserDto
+SNSUserMapper -> SNSUserDto : toDto(SNSUser)
+deactivate SNSUserMapper
+end
+
+CheckWaitingRoomController - -> CheckWaitingRoomUI :Returns the list of the users in the waiting room
+deactivate CheckWaitingRoomController
+
+alt list with users in the waiting room isn't empty
+loop while (waitingRoom has SNSUsers)
+CheckWaitingRoomUI -> CheckWaitingRoomController : getSNSUserName(snsUserDto)
+activate CheckWaitingRoomController
+CheckWaitingRoomController -> SNSUserDto : getName()
+activate SNSUserDto
+SNSUserDto - ->  CheckWaitingRoomController : returns SNSUser's name
+deactivate SNSUserDto
+CheckWaitingRoomController - -> CheckWaitingRoomUI : returns SNSUser's name
+
+note over CheckWaitingRoomUI
+gets all the other wanted atributtes of the SNSUser (sex, birth date, SNS number, phone number)
+end note
+
+deactivate CheckWaitingRoomController
+end
+CheckWaitingRoomUI - -> Nurse : Returns the list of the users in the waiting room
+
+else list with users in the waiting room is empty
+CheckWaitingRoomUI - -> Nurse : Message: "There are no users on the waiting room."
+end
+deactivate CheckWaitingRoomUI
+@enduml
+
+@startuml
+
+autonumber
+
+actor Nurse
+activate Nurse
+Nurse -> CheckWaitingRoomUI : Starts the option to consult the users in the waiting room
+activate CheckWaitingRoomUI
+CheckWaitingRoomUI -> CheckWaitingRoomController : getWaitingRoom(currentVC)
+activate CheckWaitingRoomController
+CheckWaitingRoomController -> WaitingRoom : getWaitingRoom(currentVC)
+activate WaitingRoom
+WaitingRoom - -> CheckWaitingRoomController : returns list of the users in the waiting room
+deactivate WaitingRoom
+
+loop while list of the users in the waiting room has users
+CheckWaitingRoomController -> SNSUserMapper : toDto()
+activate SNSUserMapper
+create SNSUserDto
+SNSUserMapper -> SNSUserDto : toDto(SNSUser)
+deactivate SNSUserMapper
+end
+
+CheckWaitingRoomController - -> CheckWaitingRoomUI :Returns the list of the users in the waiting room
+deactivate CheckWaitingRoomController
+
+alt list with users in the waiting room isn't empty
+loop while (waitingRoom has SNSUsers)
+CheckWaitingRoomUI -> CheckWaitingRoomController : getSNSUserName(snsUserDto)
+activate CheckWaitingRoomController
+CheckWaitingRoomController -> SNSUserDto : getName()
+activate SNSUserDto
+SNSUserDto - ->  CheckWaitingRoomController : returns SNSUser's name
+deactivate SNSUserDto
+CheckWaitingRoomController - -> CheckWaitingRoomUI : returns SNSUser's name
+
+note over CheckWaitingRoomUI
+gets all the other wanted atributtes of the SNSUser (sex, birth date, SNS number, phone number)
+end note
+
+deactivate CheckWaitingRoomController
+end
+CheckWaitingRoomUI - -> Nurse : Returns the list of the users in the waiting room
+
+else list with users in the waiting room is empty
+CheckWaitingRoomUI - -> Nurse : Message: "There are no users on the waiting room."
+end
+deactivate CheckWaitingRoomUI
+@enduml
+
+PlantUML version 1.2022.5(Sat Apr 30 11:55:52 BST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

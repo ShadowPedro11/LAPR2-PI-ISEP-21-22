@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1024.2px" preserveAspectRatio="none" style="width:1336px;height:1024px;background:#FFFFFF;" version="1.1" viewBox="0 0 1336 1024" width="1336.5px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="858.0164" style="stroke:#181818;stroke-width:0.9;" width="9" x="69.3" y="83.3484"/><rect fill="#FFFFFF" height="74.7492" style="stroke:#181818;stroke-width:0.9;" width="9" x="374.4" y="83.3484"/><rect fill="#FFFFFF" height="769.7672" style="stroke:#181818;stroke-width:0.9;" width="9" x="585.9" y="158.0977"/><rect fill="#FFFFFF" height="81.9492" style="stroke:#181818;stroke-width:0.9;" width="9" x="773.1" y="240.0469"/><rect fill="#FFFFFF" height="81.9492" style="stroke:#181818;stroke-width:0.9;" width="9" x="773.1" y="394.6289"/><rect fill="#FFFFFF" height="81.9492" style="stroke:#181818;stroke-width:0.9;" width="9" x="773.1" y="603.8438"/><rect fill="#FFFFFF" height="27.3164" style="stroke:#181818;stroke-width:0.9;" width="9" x="773.1" y="735.9258"/><rect fill="#FFFFFF" height="27.3164" style="stroke:#181818;stroke-width:0.9;" width="9" x="1004.85" y="267.3633"/><rect fill="#FFFFFF" height="27.3164" style="stroke:#181818;stroke-width:0.9;" width="9" x="1131.3" y="421.9453"/><rect fill="#FFFFFF" height="27.3164" style="stroke:#181818;stroke-width:0.9;" width="9" x="1255.05" y="631.1602"/><rect height="577.0688" style="stroke:#000000;stroke-width:1.35;fill:none;" width="1321.65" x="9" y="357.9961"/><rect height="374.618" style="stroke:#000000;stroke-width:1.35;fill:none;" width="1303.65" x="18" y="512.5781"/><rect height="140.0344" style="stroke:#000000;stroke-width:1.35;fill:none;" width="1285.65" x="27" y="699.293"/><line style="stroke:#181818;stroke-width:0.45;fill:none;stroke-dasharray:5.0,5.0;" x1="73.8" x2="73.8" y1="74.3484" y2="950.3648"/><line style="stroke:#181818;stroke-width:0.45;fill:none;stroke-dasharray:5.0,5.0;" x1="378.9" x2="378.9" y1="74.3484" y2="950.3648"/><line style="stroke:#181818;stroke-width:0.45;fill:none;stroke-dasharray:5.0,5.0;" x1="589.95" x2="589.95" y1="74.3484" y2="950.3648"/><line style="stroke:#181818;stroke-width:0.45;fill:none;stroke-dasharray:5.0,5.0;" x1="777.15" x2="777.15" y1="74.3484" y2="950.3648"/><line style="stroke:#181818;stroke-width:0.45;fill:none;stroke-dasharray:5.0,5.0;" x1="920.25" x2="920.25" y1="74.3484" y2="950.3648"/><line style="stroke:#181818;stroke-width:0.45;fill:none;stroke-dasharray:5.0,5.0;" x1="1009.35" x2="1009.35" y1="74.3484" y2="950.3648"/><line style="stroke:#181818;stroke-width:0.45;fill:none;stroke-dasharray:5.0,5.0;" x1="1135.35" x2="1135.35" y1="74.3484" y2="950.3648"/><line style="stroke:#181818;stroke-width:0.45;fill:none;stroke-dasharray:5.0,5.0;" x1="1259.55" x2="1259.55" y1="74.3484" y2="950.3648"/><text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="70.2" x="36" y="71.5799">Receptionist</text><ellipse cx="73.8" cy="12.15" fill="#E2E2F0" rx="7.2" ry="7.2" style="stroke:#181818;stroke-width:0.45;"/><path d="M73.8,19.35 L73.8,43.65 M62.1,26.55 L85.5,26.55 M73.8,43.65 L62.1,57.15 M73.8,43.65 L85.5,57.15 " fill="none" style="stroke:#181818;stroke-width:0.45;"/><text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="70.2" x="36" y="962.5447">Receptionist</text><ellipse cx="73.8" cy="972.9633" fill="#E2E2F0" rx="7.2" ry="7.2" style="stroke:#181818;stroke-width:0.45;"/><path d="M73.8,980.1633 L73.8,1004.4633 M62.1,987.3633 L85.5,987.3633 M73.8,1004.4633 L62.1,1017.9633 M73.8,1004.4633 L85.5,1017.9633 " fill="none" style="stroke:#181818;stroke-width:0.45;"/><rect fill="#E2E2F0" height="28.4484" rx="2.25" ry="2.25" style="stroke:#181818;stroke-width:0.45;" width="93.6" x="332.1" y="45"/><text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="81" x="338.4" y="64.3799">ReceptionistUI</text><rect fill="#E2E2F0" height="28.4484" rx="2.25" ry="2.25" style="stroke:#181818;stroke-width:0.45;" width="93.6" x="332.1" y="949.4648"/><text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="81" x="338.4" y="968.8447">ReceptionistUI</text><rect fill="#E2E2F0" height="28.4484" rx="2.25" ry="2.25" style="stroke:#181818;stroke-width:0.45;" width="155.7" x="512.55" y="45"/><text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="143.1" x="518.85" y="64.3799">UserArrivalReceptionistUI</text><rect fill="#E2E2F0" height="28.4484" rx="2.25" ry="2.25" style="stroke:#181818;stroke-width:0.45;" width="155.7" x="512.55" y="949.4648"/><text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="143.1" x="518.85" y="968.8447">UserArrivalReceptionistUI</text><rect fill="#E2E2F0" height="28.4484" rx="2.25" ry="2.25" style="stroke:#181818;stroke-width:0.45;" width="200.7" x="677.25" y="45"/><text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="188.1" x="683.55" y="64.3799">UserArrivalReceptionistController</text><rect fill="#E2E2F0" height="28.4484" rx="2.25" ry="2.25" style="stroke:#181818;stroke-width:0.45;" width="200.7" x="677.25" y="949.4648"/><text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="188.1" x="683.55" y="968.8447">UserArrivalReceptionistController</text><rect fill="#E2E2F0" height="28.4484" rx="2.25" ry="2.25" style="stroke:#181818;stroke-width:0.45;" width="66.6" x="886.95" y="45"/><text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="54" x="893.25" y="64.3799">Company</text><rect fill="#E2E2F0" height="28.4484" rx="2.25" ry="2.25" style="stroke:#181818;stroke-width:0.45;" width="66.6" x="886.95" y="949.4648"/><text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="54" x="893.25" y="968.8447">Company</text><rect fill="#E2E2F0" height="28.4484" rx="2.25" ry="2.25" style="stroke:#181818;stroke-width:0.45;" width="93.6" x="962.55" y="45"/><text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="81" x="968.85" y="64.3799">SNSUserStore</text><rect fill="#E2E2F0" height="28.4484" rx="2.25" ry="2.25" style="stroke:#181818;stroke-width:0.45;" width="93.6" x="962.55" y="949.4648"/><text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="81" x="968.85" y="968.8447">SNSUserStore</text><rect fill="#E2E2F0" height="28.4484" rx="2.25" ry="2.25" style="stroke:#181818;stroke-width:0.45;" width="141.3" x="1065.15" y="45"/><text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="128.7" x="1071.45" y="64.3799">VaccineScheduleStore</text><rect fill="#E2E2F0" height="28.4484" rx="2.25" ry="2.25" style="stroke:#181818;stroke-width:0.45;" width="141.3" x="1065.15" y="949.4648"/><text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="128.7" x="1071.45" y="968.8447">VaccineScheduleStore</text><rect fill="#E2E2F0" height="28.4484" rx="2.25" ry="2.25" style="stroke:#181818;stroke-width:0.45;" width="88.2" x="1215.45" y="45"/><text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="75.6" x="1221.75" y="64.3799">WaitingRoom</text><rect fill="#E2E2F0" height="28.4484" rx="2.25" ry="2.25" style="stroke:#181818;stroke-width:0.45;" width="88.2" x="1215.45" y="949.4648"/><text fill="#000000" font-family="sans-serif" font-size="12.6" lengthAdjust="spacing" textLength="75.6" x="1221.75" y="968.8447">WaitingRoom</text><rect fill="#FFFFFF" height="858.0164" style="stroke:#181818;stroke-width:0.9;" width="9" x="69.3" y="83.3484"/><rect fill="#FFFFFF" height="74.7492" style="stroke:#181818;stroke-width:0.9;" width="9" x="374.4" y="83.3484"/><rect fill="#FFFFFF" height="769.7672" style="stroke:#181818;stroke-width:0.9;" width="9" x="585.9" y="158.0977"/><rect fill="#FFFFFF" height="81.9492" style="stroke:#181818;stroke-width:0.9;" width="9" x="773.1" y="240.0469"/><rect fill="#FFFFFF" height="81.9492" style="stroke:#181818;stroke-width:0.9;" width="9" x="773.1" y="394.6289"/><rect fill="#FFFFFF" height="81.9492" style="stroke:#181818;stroke-width:0.9;" width="9" x="773.1" y="603.8438"/><rect fill="#FFFFFF" height="27.3164" style="stroke:#181818;stroke-width:0.9;" width="9" x="773.1" y="735.9258"/><rect fill="#FFFFFF" height="27.3164" style="stroke:#181818;stroke-width:0.9;" width="9" x="1004.85" y="267.3633"/><rect fill="#FFFFFF" height="27.3164" style="stroke:#181818;stroke-width:0.9;" width="9" x="1131.3" y="421.9453"/><rect fill="#FFFFFF" height="27.3164" style="stroke:#181818;stroke-width:0.9;" width="9" x="1255.05" y="631.1602"/><polygon fill="#181818" points="363.6,99.8648,372.6,103.4648,363.6,107.0648,367.2,103.4648" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;" x1="78.3" x2="369" y1="103.4648" y2="103.4648"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="6.3" x="84.6" y="99.094">1</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="264.6" x="94.5" y="99.094">selects option to register the arrival of an SNS user</text><polygon fill="#181818" points="909.45,127.1813,918.45,130.7813,909.45,134.3813,913.05,130.7813" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;" x1="777.6" x2="914.85" y1="130.7813" y2="130.7813"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="6.3" x="783.9" y="126.4104">2</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="86.4" x="793.8" y="126.4104">getWaitingRoom</text><polygon fill="#181818" points="575.1,154.4977,584.1,158.0977,575.1,161.6977,578.7,158.0977" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;" x1="378.9" x2="580.5" y1="158.0977" y2="158.0977"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="6.3" x="385.2" y="153.7269">3</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="175.5" x="395.1" y="153.7269">opens "UserArrivalReceptionistUI"</text><polygon fill="#181818" points="88.2,181.8141,79.2,185.4141,88.2,189.0141,84.6,185.4141" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;stroke-dasharray:2.0,2.0;" x1="82.8" x2="585" y1="185.4141" y2="185.4141"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="6.3" x="93.6" y="181.0433">4</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="149.4" x="103.5" y="181.0433">requests SNS user's number</text><polygon fill="#181818" points="575.1,209.1305,584.1,212.7305,575.1,216.3305,578.7,212.7305" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;" x1="78.3" x2="580.5" y1="212.7305" y2="212.7305"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="6.3" x="84.6" y="208.3597">5</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="109.8" x="94.5" y="208.3597">types requested data</text><polygon fill="#181818" points="762.3,236.4469,771.3,240.0469,762.3,243.6469,765.9,240.0469" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;" x1="594.9" x2="767.7" y1="240.0469" y2="240.0469"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="6.3" x="601.2" y="235.6761">6</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="89.1" x="611.1" y="235.6761">verifyIfUserExists</text><polygon fill="#181818" points="994.05,263.7633,1003.05,267.3633,994.05,270.9633,997.65,267.3633" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;" x1="782.1" x2="999.45" y1="267.3633" y2="267.3633"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="6.3" x="788.4" y="262.9925">7</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="89.1" x="798.3" y="262.9925">verifyIfUserExists</text><polygon fill="#181818" points="792,291.0797,783,294.6797,792,298.2797,788.4,294.6797" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;stroke-dasharray:2.0,2.0;" x1="786.6" x2="1008.45" y1="294.6797" y2="294.6797"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="6.3" x="797.4" y="290.3089">8</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="58.5" x="807.3" y="290.3089">gives result</text><polygon fill="#181818" points="604.8,318.3961,595.8,321.9961,604.8,325.5961,601.2,321.9961" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;stroke-dasharray:2.0,2.0;" x1="599.4" x2="776.7" y1="321.9961" y2="321.9961"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="6.3" x="610.2" y="317.6253">9</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="58.5" x="620.1" y="317.6253">gives result</text><path d="M9,357.9961 L63.9,357.9961 L63.9,365.5125 L54.9,374.5125 L9,374.5125 L9,357.9961 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.35;"/><rect fill="none" height="577.0688" style="stroke:#000000;stroke-width:1.35;" width="1321.65" x="9" y="357.9961"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="14.4" x="22.5" y="371.0417">alt</text><text fill="#000000" font-family="sans-serif" font-size="9.9" font-weight="bold" lengthAdjust="spacing" textLength="138.6" x="77.4" y="370.0731">[(user exists) is (true) then]</text><polygon fill="#181818" points="762.3,391.0289,771.3,394.6289,762.3,398.2289,765.9,394.6289" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;" x1="594.9" x2="767.7" y1="394.6289" y2="394.6289"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="12.6" x="601.2" y="390.2581">10</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="125.1" x="617.4" y="390.2581">verifyIfUserHasSchedule</text><polygon fill="#181818" points="1120.5,418.3453,1129.5,421.9453,1120.5,425.5453,1124.1,421.9453" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;" x1="782.1" x2="1125.9" y1="421.9453" y2="421.9453"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="12.6" x="788.4" y="417.5745">11</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="125.1" x="804.6" y="417.5745">verifyIfUserHasSchedule</text><polygon fill="#181818" points="792,445.6617,783,449.2617,792,452.8617,788.4,449.2617" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;stroke-dasharray:2.0,2.0;" x1="786.6" x2="1134.9" y1="449.2617" y2="449.2617"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="12.6" x="797.4" y="444.8909">12</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="58.5" x="813.6" y="444.8909">gives result</text><polygon fill="#181818" points="604.8,472.9781,595.8,476.5781,604.8,480.1781,601.2,476.5781" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;stroke-dasharray:2.0,2.0;" x1="599.4" x2="776.7" y1="476.5781" y2="476.5781"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="12.6" x="610.2" y="472.2073">13</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="58.5" x="626.4" y="472.2073">gives result</text><path d="M18,512.5781 L72.9,512.5781 L72.9,520.0945 L63.9,529.0945 L18,529.0945 L18,512.5781 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.35;"/><rect fill="none" height="374.618" style="stroke:#000000;stroke-width:1.35;" width="1303.65" x="18" y="512.5781"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="14.4" x="31.5" y="525.6237">alt</text><text fill="#000000" font-family="sans-serif" font-size="9.9" font-weight="bold" lengthAdjust="spacing" textLength="220.5" x="86.4" y="524.6552">[(user has vaccine scheduled) is (true) then]</text><polygon fill="#181818" points="88.2,545.6109,79.2,549.2109,88.2,552.8109,84.6,549.2109" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;stroke-dasharray:2.0,2.0;" x1="82.8" x2="585" y1="549.2109" y2="549.2109"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="12.6" x="93.6" y="544.8401">14</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="212.4" x="109.8" y="544.8401">shows all data and requests confirmation</text><polygon fill="#181818" points="575.1,572.9273,584.1,576.5273,575.1,580.1273,578.7,576.5273" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;" x1="78.3" x2="580.5" y1="576.5273" y2="576.5273"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="12.6" x="84.6" y="572.1565">15</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="70.2" x="100.8" y="572.1565">confirms data</text><polygon fill="#181818" points="762.3,600.2438,771.3,603.8438,762.3,607.4438,765.9,603.8438" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;" x1="594.9" x2="767.7" y1="603.8438" y2="603.8438"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="12.6" x="601.2" y="599.4729">16</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="133.2" x="617.4" y="599.4729">checkIfUserIsInCorrectVC</text><polygon fill="#181818" points="1244.25,627.5602,1253.25,631.1602,1244.25,634.7602,1247.85,631.1602" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;" x1="782.1" x2="1249.65" y1="631.1602" y2="631.1602"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="12.6" x="788.4" y="626.7894">17</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="133.2" x="804.6" y="626.7894">checkIfUserIsInCorrectVC</text><polygon fill="#181818" points="792,654.8766,783,658.4766,792,662.0766,788.4,658.4766" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;stroke-dasharray:2.0,2.0;" x1="786.6" x2="1258.65" y1="658.4766" y2="658.4766"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="12.6" x="797.4" y="654.1058">18</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="58.5" x="813.6" y="654.1058">gives result</text><polygon fill="#181818" points="604.8,682.193,595.8,685.793,604.8,689.393,601.2,685.793" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;stroke-dasharray:2.0,2.0;" x1="599.4" x2="776.7" y1="685.793" y2="685.793"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="12.6" x="610.2" y="681.4222">19</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="58.5" x="626.4" y="681.4222">gives result</text><path d="M27,699.293 L81.9,699.293 L81.9,706.8094 L72.9,715.8094 L27,715.8094 L27,699.293 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.35;"/><rect fill="none" height="140.0344" style="stroke:#000000;stroke-width:1.35;" width="1285.65" x="27" y="699.293"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="14.4" x="40.5" y="712.3386">alt</text><text fill="#000000" font-family="sans-serif" font-size="9.9" font-weight="bold" lengthAdjust="spacing" textLength="260.1" x="95.4" y="711.37">[(user is in correct vaccination center) is (true) then]</text><polygon fill="#181818" points="762.3,732.3258,771.3,735.9258,762.3,739.5258,765.9,735.9258" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;" x1="594.9" x2="767.7" y1="735.9258" y2="735.9258"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="12.6" x="601.2" y="731.555">20</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="134.1" x="617.4" y="731.555">moveUserToWaitingRoom</text><polygon fill="#181818" points="1248.75,759.6422,1257.75,763.2422,1248.75,766.8422,1252.35,763.2422" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;" x1="777.6" x2="1254.15" y1="763.2422" y2="763.2422"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="12.6" x="783.9" y="758.8714">21</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="134.1" x="800.1" y="758.8714">moveUserToWaitingRoom</text><polygon fill="#181818" points="88.2,786.9586,79.2,790.5586,88.2,794.1586,84.6,790.5586" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;stroke-dasharray:2.0,2.0;" x1="82.8" x2="585" y1="790.5586" y2="790.5586"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="12.6" x="93.6" y="786.1878">22</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="136.8" x="109.8" y="786.1878">informs operation success</text><line style="stroke:#000000;stroke-width:0.9;stroke-dasharray:2.0,2.0;" x1="27" x2="1312.65" y1="798.6586" y2="798.6586"/><text fill="#000000" font-family="sans-serif" font-size="9.9" font-weight="bold" lengthAdjust="spacing" textLength="38.7" x="31.5" y="808.9356">[(false)]</text><polygon fill="#181818" points="88.2,828.5273,79.2,832.1273,88.2,835.7273,84.6,832.1273" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;stroke-dasharray:2.0,2.0;" x1="82.8" x2="585" y1="832.1273" y2="832.1273"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="12.6" x="93.6" y="827.7565">23</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="285.3" x="109.8" y="827.7565">informs the user is not in the correct vaccination center</text><line style="stroke:#000000;stroke-width:0.9;stroke-dasharray:2.0,2.0;" x1="18" x2="1321.65" y1="846.5273" y2="846.5273"/><text fill="#000000" font-family="sans-serif" font-size="9.9" font-weight="bold" lengthAdjust="spacing" textLength="38.7" x="22.5" y="856.8044">[(false)]</text><polygon fill="#181818" points="88.2,876.3961,79.2,879.9961,88.2,883.5961,84.6,879.9961" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;stroke-dasharray:2.0,2.0;" x1="82.8" x2="585" y1="879.9961" y2="879.9961"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="12.6" x="93.6" y="875.6253">24</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="268.2" x="109.8" y="875.6253">informs the user does not have a vaccine scheduled</text><line style="stroke:#000000;stroke-width:0.9;stroke-dasharray:2.0,2.0;" x1="9" x2="1330.65" y1="894.3961" y2="894.3961"/><text fill="#000000" font-family="sans-serif" font-size="9.9" font-weight="bold" lengthAdjust="spacing" textLength="38.7" x="13.5" y="904.6731">[(false)]</text><polygon fill="#181818" points="88.2,924.2648,79.2,927.8648,88.2,931.4648,84.6,927.8648" style="stroke:#181818;stroke-width:0.9;"/><line style="stroke:#181818;stroke-width:0.9;stroke-dasharray:2.0,2.0;" x1="82.8" x2="589.5" y1="927.8648" y2="927.8648"/><text fill="#000000" font-family="sans-serif" font-size="11.7" font-weight="bold" lengthAdjust="spacing" textLength="12.6" x="93.6" y="923.494">25</text><text fill="#000000" font-family="sans-serif" font-size="11.7" lengthAdjust="spacing" textLength="161.1" x="109.8" y="923.494">informs the user does not exist</text><!--MD5=[06aa1e714bc047ded3a38d8d75f4807d]
+@startuml
+autonumber
+'hide footbox
+actor "Receptionist" as RCP
+
+participant "ReceptionistUI" as RCPUI
+participant "UserArrivalReceptionistUI" as UAUI
+participant "UserArrivalReceptionistController" as UACTRL
+participant "Company" as CMP
+participant "SNSUserStore" as US
+participant "VaccineScheduleStore" as VSS
+participant "WaitingRoom" as WTR
+
+activate RCP
+activate RCPUI
+RCP -> RCPUI : selects option to register the arrival of an SNS user
+
+UACTRL -> CMP : getWaitingRoom
+
+RCPUI -> UAUI : opens "UserArrivalReceptionistUI"
+deactivate RCPUI
+activate UAUI
+UAUI - -> RCP : requests SNS user's number
+
+
+RCP -> UAUI : types requested data
+
+
+UAUI -> UACTRL : verifyIfUserExists
+activate UACTRL
+
+UACTRL -> US : verifyIfUserExists
+activate US
+
+US - -> UACTRL : gives result
+deactivate US
+
+UACTRL - -> UAUI : gives result
+deactivate UACTRL
+|||
+
+alt (user exists) is (true) then
+  UAUI -> UACTRL: verifyIfUserHasSchedule
+activate UACTRL
+
+  UACTRL -> VSS : verifyIfUserHasSchedule
+activate VSS
+
+  VSS - -> UACTRL: gives result
+deactivate VSS
+
+  UACTRL - -> UAUI: gives result
+deactivate UACTRL
+  |||
+
+alt (user has vaccine scheduled) is (true) then
+
+UAUI - -> RCP : shows all data and requests confirmation
+
+  RCP -> UAUI: confirms data
+
+UAUI -> UACTRL : checkIfUserIsInCorrectVC
+
+activate UACTRL
+UACTRL -> WTR : checkIfUserIsInCorrectVC
+
+activate WTR
+WTR - -> UACTRL : gives result
+deactivate WTR
+
+UACTRL - -> UAUI : gives result
+deactivate UACTRL
+
+alt (user is in correct vaccination center) is (true) then
+
+  UAUI -> UACTRL : moveUserToWaitingRoom
+activate UACTRL
+  UACTRL -> WTR : moveUserToWaitingRoom
+deactivate UACTRL
+  UAUI - -> RCP : informs operation success
+else (false)
+UAUI - -> RCP : informs the user is not in the correct vaccination center
+
+end
+else (false)
+  UAUI - -> RCP : informs the user does not have a vaccine scheduled
+
+end
+
+ else (false)
+ UAUI - -> RCP : informs the user does not exist
+deactivate UAUI
+
+end
+
+deactivate RCP
+
+
+
+@enduml
+
+@startuml
+autonumber
+actor "Receptionist" as RCP
+
+participant "ReceptionistUI" as RCPUI
+participant "UserArrivalReceptionistUI" as UAUI
+participant "UserArrivalReceptionistController" as UACTRL
+participant "Company" as CMP
+participant "SNSUserStore" as US
+participant "VaccineScheduleStore" as VSS
+participant "WaitingRoom" as WTR
+
+activate RCP
+activate RCPUI
+RCP -> RCPUI : selects option to register the arrival of an SNS user
+
+UACTRL -> CMP : getWaitingRoom
+
+RCPUI -> UAUI : opens "UserArrivalReceptionistUI"
+deactivate RCPUI
+activate UAUI
+UAUI - -> RCP : requests SNS user's number
+
+
+RCP -> UAUI : types requested data
+
+
+UAUI -> UACTRL : verifyIfUserExists
+activate UACTRL
+
+UACTRL -> US : verifyIfUserExists
+activate US
+
+US - -> UACTRL : gives result
+deactivate US
+
+UACTRL - -> UAUI : gives result
+deactivate UACTRL
+|||
+
+alt (user exists) is (true) then
+  UAUI -> UACTRL: verifyIfUserHasSchedule
+activate UACTRL
+
+  UACTRL -> VSS : verifyIfUserHasSchedule
+activate VSS
+
+  VSS - -> UACTRL: gives result
+deactivate VSS
+
+  UACTRL - -> UAUI: gives result
+deactivate UACTRL
+  |||
+
+alt (user has vaccine scheduled) is (true) then
+
+UAUI - -> RCP : shows all data and requests confirmation
+
+  RCP -> UAUI: confirms data
+
+UAUI -> UACTRL : checkIfUserIsInCorrectVC
+
+activate UACTRL
+UACTRL -> WTR : checkIfUserIsInCorrectVC
+
+activate WTR
+WTR - -> UACTRL : gives result
+deactivate WTR
+
+UACTRL - -> UAUI : gives result
+deactivate UACTRL
+
+alt (user is in correct vaccination center) is (true) then
+
+  UAUI -> UACTRL : moveUserToWaitingRoom
+activate UACTRL
+  UACTRL -> WTR : moveUserToWaitingRoom
+deactivate UACTRL
+  UAUI - -> RCP : informs operation success
+else (false)
+UAUI - -> RCP : informs the user is not in the correct vaccination center
+
+end
+else (false)
+  UAUI - -> RCP : informs the user does not have a vaccine scheduled
+
+end
+
+ else (false)
+ UAUI - -> RCP : informs the user does not exist
+deactivate UAUI
+
+end
+
+deactivate RCP
+
+
+
+@enduml
+
+PlantUML version 1.2022.5(Sat Apr 30 11:55:52 BST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

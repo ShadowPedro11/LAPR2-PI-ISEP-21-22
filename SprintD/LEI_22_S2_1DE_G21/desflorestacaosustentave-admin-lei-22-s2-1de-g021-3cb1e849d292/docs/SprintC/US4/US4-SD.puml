@@ -1,0 +1,100 @@
+@startuml
+autonumber
+'hide footbox
+actor "Receptionist" as RCP
+
+participant "ReceptionistUI" as RCPUI
+participant "UserArrivalReceptionistUI" as UAUI
+participant "UserArrivalReceptionistController" as UACTRL
+participant "Company" as CMP
+participant "SNSUserStore" as US
+participant "VaccineScheduleStore" as VSS
+participant "WaitingRoom" as WTR
+
+activate RCP
+activate RCPUI
+RCP -> RCPUI : selects option to register the arrival of an SNS user
+
+UACTRL -> CMP : getWaitingRoom
+
+RCPUI -> UAUI : opens "UserArrivalReceptionistUI"
+deactivate RCPUI
+activate UAUI
+UAUI --> RCP : requests SNS user's number
+
+
+RCP -> UAUI : types requested data
+
+
+UAUI -> UACTRL : verifyIfUserExists
+activate UACTRL
+
+UACTRL -> US : verifyIfUserExists
+activate US
+
+US --> UACTRL : gives result
+deactivate US
+
+UACTRL --> UAUI : gives result
+deactivate UACTRL
+|||
+
+alt (user exists) is (true) then
+  UAUI -> UACTRL: verifyIfUserHasSchedule
+activate UACTRL
+
+  UACTRL -> VSS : verifyIfUserHasSchedule
+activate VSS
+
+  VSS --> UACTRL: gives result
+deactivate VSS
+
+  UACTRL --> UAUI: gives result
+deactivate UACTRL
+  |||
+
+alt (user has vaccine scheduled) is (true) then
+
+UAUI --> RCP : shows all data and requests confirmation
+
+  RCP -> UAUI: confirms data
+
+UAUI -> UACTRL : checkIfUserIsInCorrectVC
+
+activate UACTRL
+UACTRL -> WTR : checkIfUserIsInCorrectVC
+
+activate WTR
+WTR --> UACTRL : gives result
+deactivate WTR
+
+UACTRL --> UAUI : gives result
+deactivate UACTRL
+
+alt (user is in correct vaccination center) is (true) then
+
+  UAUI -> UACTRL : moveUserToWaitingRoom
+activate UACTRL
+  UACTRL -> WTR : moveUserToWaitingRoom
+deactivate UACTRL
+  UAUI --> RCP : informs operation success
+else (false)
+UAUI --> RCP : informs the user is not in the correct vaccination center
+
+end
+else (false)
+  UAUI --> RCP : informs the user does not have a vaccine scheduled
+
+end
+
+ else (false)
+ UAUI --> RCP : informs the user does not exist
+deactivate UAUI
+
+end
+
+deactivate RCP
+
+
+
+@enduml

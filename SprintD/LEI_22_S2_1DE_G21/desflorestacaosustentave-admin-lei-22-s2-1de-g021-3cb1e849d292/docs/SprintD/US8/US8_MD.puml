@@ -1,0 +1,102 @@
+@startuml
+
+'class enumeration
+class Company
+class VaccinationEvent
+class RecoveryRoom
+class Notification
+class EmailNotification extends Notification
+class SMSNotification extends Notification
+class Vaccine
+class VaccineType
+class WaitingRoom
+class SNSUser
+
+package domain.model.employee {
+class Nurse
+}
+
+package domain.model.VaccinationCenter {
+abstract VaccinationCenter
+class HealthCareCenter extends VaccinationCenter{
+-ARG/AGES
+}
+class MassVaccinationCenter extends VaccinationCenter{
+-VaccineType
+}
+
+'class components
+class SNSUser {
+-name
+-sex
+-Birth Date
+-Address
+-Phone number
+-E-mail
+-SNS number
+-Citizen card number
+}
+
+abstract VaccinationCenter {
+-name
+-address
+-phone number
+-e-mail address
+-fax number
+-website address
+-opening hours
+-closing hours
+-slot duration
+-maximum number of vaccines
+-coordinator
+}
+
+class Vaccine {
+-name
+-brand
+-type
+-age groups
+-vaccines per age group
+-dosage
+-time interval regarding previous vaccine administered
+}
+
+class Company {
+-name
+}
+
+class VaccineType {
+-Code
+-Description
+-Technology
+}
+
+
+'class relation
+
+Nurse "1..*" -- "1..*" VaccineType : administer >
+Nurse "1..*" -- "1..*" SNSUser : checks if he/she is waiting >
+Nurse "1..*" -- "1..*" RecoveryRoom : sends patient to >
+Nurse "1..*" -- "1..*" VaccinationEvent : performs >
+Nurse "1..*" -- "1" WaitingRoom : consults patients >
+
+Company "1" -- "1..*" VaccinationCenter : has >
+Company "1" -- "*" Vaccine : has >
+Company "1" -- "*" VaccineType : has >
+Company "1" -- "*" SNSUser : has >
+
+Vaccine "1..*" -- "1..*" VaccineType : is of >
+
+VaccinationEvent "1..*" -- "1..*" VaccineType : to get >
+
+SNSUser "1..*" -- "1..*" VaccineType : recieves >
+SNSUser "1..*" -- "1..*" Notification : recieves >
+
+VaccinationCenter "1..*" -- "1..*" RecoveryRoom : has >
+VaccinationCenter "1..*" -- "1..*" SNSUser : recieves >
+VaccinationCenter "1..*" -- "1..*" VaccineType : where is administered >
+
+RecoveryRoom "1" -- "1..*" SNSUser : for >
+RecoveryRoom "1" -- "*" VaccinationEvent : after >
+
+@enduml

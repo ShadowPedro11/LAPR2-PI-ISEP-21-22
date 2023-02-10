@@ -1,0 +1,167 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor "Center Coordinator" as CenterCoordinator
+participant AnalyzeCenterPerformanceUI
+participant AnalyzeCenterPerformanceDateAndIntervalController
+participant AnalyzeCenterPerformanceCreateAnalysisController
+participant Company
+participant VaccinationCenter
+participant AnalyzeCenterPerformanceStore
+participant WaitingRoom
+participant RecoveryRoom
+
+autonumber
+
+
+activate CenterCoordinator
+CenterCoordinator -> AnalyzeCenterPerformanceUI: Selects option to analyze center performance
+activate AnalyzeCenterPerformanceUI
+
+AnalyzeCenterPerformanceUI -> AnalyzeCenterPerformanceDateAndIntervalController : getAnalyzeCenterPerformanceStore()
+activate AnalyzeCenterPerformanceDateAndIntervalController
+AnalyzeCenterPerformanceDateAndIntervalController -> Company : getAnalyzeCenterPerformanceStore()
+activate Company
+deactivate Company
+deactivate AnalyzeCenterPerformanceDateAndIntervalController
+
+AnalyzeCenterPerformanceUI -> AnalyzeCenterPerformanceDateAndIntervalController: getCurrentVC()
+activate AnalyzeCenterPerformanceDateAndIntervalController
+AnalyzeCenterPerformanceDateAndIntervalController -> Company:vaccinationCenter = getCurrentVCOfCC()
+activate Company
+deactivate Company
+
+deactivate AnalyzeCenterPerformanceDateAndIntervalController
+
+
+AnalyzeCenterPerformanceUI --> CenterCoordinator: request the day for the analysis
+deactivate AnalyzeCenterPerformanceUI
+
+
+CenterCoordinator -> AnalyzeCenterPerformanceUI: types the day to create the analysis and interval duration for the analysis
+activate AnalyzeCenterPerformanceUI
+
+
+
+
+AnalyzeCenterPerformanceUI -> AnalyzeCenterPerformanceDateAndIntervalController: validateDate(day)
+activate AnalyzeCenterPerformanceDateAndIntervalController
+
+AnalyzeCenterPerformanceDateAndIntervalController -> AnalyzeCenterPerformanceStore: checkDayForAnalysis(day, vaccinationCenter)
+activate AnalyzeCenterPerformanceStore
+
+AnalyzeCenterPerformanceStore -> AnalyzeCenterPerformanceStore : setVaccinationCenter(vaccinationCenter)
+AnalyzeCenterPerformanceStore -> VaccinationCenter : waitingRoom = getWaitingRoom()
+activate VaccinationCenter
+deactivate VaccinationCenter
+activate AnalyzeCenterPerformanceStore
+deactivate AnalyzeCenterPerformanceStore
+
+AnalyzeCenterPerformanceStore -> AnalyzeCenterPerformanceStore : setWaitingRoom(waitingRoom)
+activate AnalyzeCenterPerformanceStore
+deactivate AnalyzeCenterPerformanceStore
+
+AnalyzeCenterPerformanceStore -> VaccinationCenter : recoveryRoom = getRecoveryRoom()
+activate VaccinationCenter
+deactivate VaccinationCenter
+
+AnalyzeCenterPerformanceStore -> AnalyzeCenterPerformanceStore : setRecoveryRoom(recoveryRoom)
+activate AnalyzeCenterPerformanceStore
+deactivate AnalyzeCenterPerformanceStore
+
+AnalyzeCenterPerformanceStore -> WaitingRoom: checkIfAnyoneEntered(day)
+activate WaitingRoom
+deactivate WaitingRoom
+deactivate AnalyzeCenterPerformanceStore
+deactivate AnalyzeCenterPerformanceDateAndIntervalController
+
+AnalyzeCenterPerformanceUI -> AnalyzeCenterPerformanceDateAndIntervalController: setMinutesPerInterval(minutes)
+activate AnalyzeCenterPerformanceDateAndIntervalController
+AnalyzeCenterPerformanceDateAndIntervalController -> AnalyzeCenterPerformanceStore: setMinutesPerInterval(minutes)
+activate AnalyzeCenterPerformanceStore
+
+AnalyzeCenterPerformanceStore -> AnalyzeCenterPerformanceStore: setMinutesPerInterval(minutes)
+activate AnalyzeCenterPerformanceStore
+deactivate AnalyzeCenterPerformanceStore
+
+AnalyzeCenterPerformanceStore -> AnalyzeCenterPerformanceStore: setIntervals(minutes)
+activate AnalyzeCenterPerformanceStore
+deactivate AnalyzeCenterPerformanceStore
+
+deactivate AnalyzeCenterPerformanceStore
+deactivate AnalyzeCenterPerformanceDateAndIntervalController
+
+alt if is a valid day and interval
+
+AnalyzeCenterPerformanceUI --> CenterCoordinator: shows how many intervals will be generated
+deactivate AnalyzeCenterPerformanceUI
+
+
+
+
+
+
+CenterCoordinator -> AnalyzeCenterPerformanceUI: Confirms the intervals that will be generated
+activate AnalyzeCenterPerformanceUI
+
+
+
+
+
+
+
+
+
+
+AnalyzeCenterPerformanceUI -> AnalyzeCenterPerformanceCreateAnalysisController : createAnalysis()
+activate AnalyzeCenterPerformanceCreateAnalysisController
+
+AnalyzeCenterPerformanceCreateAnalysisController -> Company : getAnalyzeCenterPerformanceStore()
+activate Company
+deactivate Company
+
+AnalyzeCenterPerformanceCreateAnalysisController -> AnalyzeCenterPerformanceStore : createAnalysis()
+activate AnalyzeCenterPerformanceStore
+
+AnalyzeCenterPerformanceStore -> AnalyzeCenterPerformanceStore : createAnalysis()
+activate AnalyzeCenterPerformanceStore
+deactivate AnalyzeCenterPerformanceStore
+
+AnalyzeCenterPerformanceStore -> WaitingRoom : getArrivalTIme()
+activate WaitingRoom
+deactivate WaitingRoom
+
+AnalyzeCenterPerformanceStore -> RecoveryRoom : getLeavingTime()
+activate RecoveryRoom
+deactivate RecoveryRoom
+
+AnalyzeCenterPerformanceStore -> AnalyzeCenterPerformanceStore : difference = saveDifferenceBetweenInAndOut(arrivalTime, leavingTime)
+activate AnalyzeCenterPerformanceStore
+deactivate AnalyzeCenterPerformanceStore
+
+AnalyzeCenterPerformanceStore -> AnalyzeCenterPerformanceStore: chooseAlgorithm()
+activate AnalyzeCenterPerformanceStore
+deactivate AnalyzeCenterPerformanceStore
+
+AnalyzeCenterPerformanceStore -> AnalyzeCenterPerformanceStore: getSum()
+activate AnalyzeCenterPerformanceStore
+deactivate AnalyzeCenterPerformanceStore
+
+AnalyzeCenterPerformanceStore -> AnalyzeCenterPerformanceStore: subListString()
+activate AnalyzeCenterPerformanceStore
+deactivate AnalyzeCenterPerformanceStore
+
+
+deactivate AnalyzeCenterPerformanceCreateAnalysisController
+
+deactivate AnalyzeCenterPerformanceStore
+deactivate AnalyzeCenterPerformanceDateAndIntervalController
+CenterCoordinator <-- AnalyzeCenterPerformanceUI: Shows the performance analysis of the center
+deactivate AnalyzeCenterPerformanceUI
+
+else
+
+AnalyzeCenterPerformanceUI --> CenterCoordinator: no analysis will be made
+
+end
+@enduml

@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor "Center Coordinator" as CenterCoordinator
+
+autonumber
+
+
+activate CenterCoordinator
+
+CenterCoordinator -> System: Selects option to analyze center performance
+
+System --> CenterCoordinator: request the day for the analysis
+
+CenterCoordinator -> System: types the day of the analysis duration of the intervals
+
+
+alt if is a valid day and interval
+
+System --> CenterCoordinator: shows how many intervals will be generated
+
+CenterCoordinator -> System: Confirms the intervals that will be generated
+
+CenterCoordinator <-- System: Shows the performance analysis of the center
+
+else
+
+System --> CenterCoordinator: no analysis will be made
+
+end
+
+@enduml

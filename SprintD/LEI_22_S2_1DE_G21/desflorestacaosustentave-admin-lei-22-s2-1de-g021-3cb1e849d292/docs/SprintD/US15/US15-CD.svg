@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="582.4px" preserveAspectRatio="none" style="width:678px;height:582px;background:#FFFFFF;" version="1.1" viewBox="0 0 678 582" width="679px" zoomAndPan="magnify"><defs/><g><!--MD5=[7472dbf65bcdb1b33277f8ba641579f2]
+class CheckAndExportUI--><g id="elem_CheckAndExportUI"><rect codeLine="3" fill="#F1F1F1" height="33.6" id="CheckAndExportUI" rx="1.75" ry="1.75" style="stroke:#181818;stroke-width:0.3499999999999999;" width="104.3" x="404.25" y="4.9"/><ellipse cx="414.75" cy="16.1" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#181818;stroke-width:0.6999999999999998;"/><path d="M416.15,13.65 Q416.2922,13.3 416.4562,13.125 Q416.6203,12.95 416.8062,12.95 Q417.1344,12.95 417.3422,13.1469 Q417.55,13.3437 417.55,13.8031 L417.55,14.8969 Q417.55,15.3562 417.3531,15.5531 Q417.1562,15.75 416.85,15.75 Q416.5766,15.75 416.4016,15.6297 Q416.2266,15.5094 416.15,15.1922 Q416.1172,14.9734 415.9969,14.8531 Q415.7781,14.6234 415.3844,14.4922 Q414.9906,14.35 414.5969,14.35 Q414.1047,14.35 413.6891,14.5469 Q413.2844,14.7437 412.9672,15.1812 Q412.65,15.6187 412.65,16.2203 L412.65,16.8656 Q412.65,17.5875 413.2406,18.0687 Q413.8312,18.55 414.8812,18.55 Q415.5047,18.55 415.9422,18.4078 Q416.1937,18.3312 416.4781,18.0797 Q416.6641,17.9375 416.7625,17.8937 Q416.8609,17.85 416.9812,17.85 Q417.2109,17.85 417.375,18.0359 Q417.55,18.2109 417.55,18.4625 Q417.55,18.7031 417.3094,18.9875 Q416.9594,19.4031 416.4016,19.6328 Q415.6687,19.95 414.7719,19.95 Q413.7219,19.95 412.8797,19.5344 Q412.2016,19.2062 411.7203,18.4953 Q411.25,17.7844 411.25,16.9422 L411.25,16.1766 Q411.25,15.3016 411.6656,14.5359 Q412.0922,13.7703 412.825,13.3656 Q413.5687,12.95 414.4,12.95 Q414.9031,12.95 415.3406,13.125 Q415.7781,13.3 416.15,13.65 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="81.9" x="424.55" y="20.11">CheckAndExportUI</text><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="404.95" x2="507.85" y1="27.3" y2="27.3"/><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="404.95" x2="507.85" y1="32.9" y2="32.9"/></g><!--MD5=[fc4ed362106cf86add27d3e8f6df6799]
+class CheckAndExportController--><g id="elem_CheckAndExportController"><rect codeLine="5" fill="#F1F1F1" height="58.2531" id="CheckAndExportController" rx="1.75" ry="1.75" style="stroke:#181818;stroke-width:0.3499999999999999;" width="139.3" x="386.75" y="123.2"/><ellipse cx="397.25" cy="134.4" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#181818;stroke-width:0.6999999999999998;"/><path d="M398.65,131.95 Q398.7922,131.6 398.9562,131.425 Q399.1203,131.25 399.3062,131.25 Q399.6344,131.25 399.8422,131.4469 Q400.05,131.6437 400.05,132.1031 L400.05,133.1969 Q400.05,133.6562 399.8531,133.8531 Q399.6562,134.05 399.35,134.05 Q399.0766,134.05 398.9016,133.9297 Q398.7266,133.8094 398.65,133.4922 Q398.6172,133.2734 398.4969,133.1531 Q398.2781,132.9234 397.8844,132.7922 Q397.4906,132.65 397.0969,132.65 Q396.6047,132.65 396.1891,132.8469 Q395.7844,133.0437 395.4672,133.4812 Q395.15,133.9187 395.15,134.5203 L395.15,135.1656 Q395.15,135.8875 395.7406,136.3687 Q396.3312,136.85 397.3812,136.85 Q398.0047,136.85 398.4422,136.7078 Q398.6937,136.6312 398.9781,136.3797 Q399.1641,136.2375 399.2625,136.1937 Q399.3609,136.15 399.4812,136.15 Q399.7109,136.15 399.875,136.3359 Q400.05,136.5109 400.05,136.7625 Q400.05,137.0031 399.8094,137.2875 Q399.4594,137.7031 398.9016,137.9328 Q398.1687,138.25 397.2719,138.25 Q396.2219,138.25 395.3797,137.8344 Q394.7016,137.5062 394.2203,136.7953 Q393.75,136.0844 393.75,135.2422 L393.75,134.4766 Q393.75,133.6016 394.1656,132.8359 Q394.5922,132.0703 395.325,131.6656 Q396.0687,131.25 396.9,131.25 Q397.4031,131.25 397.8406,131.425 Q398.2781,131.6 398.65,131.95 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="116.9" x="407.05" y="138.41">CheckAndExportController</text><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="387.45" x2="525.35" y1="145.6" y2="145.6"/><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="387.45" x2="525.35" y1="151.2" y2="151.2"/><ellipse cx="394.45" cy="158.9" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="111.3" x="400.75" y="164.1732">getVaccinationStatistics()</text><ellipse cx="394.45" cy="171.2266" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="86.8" x="400.75" y="176.4998">saveToFile(file,text)</text></g><!--MD5=[fa8de0bc8aca459c6f2d8cdf42bcc466]
+class CheckAndExportStore--><g id="elem_CheckAndExportStore"><rect codeLine="10" fill="#F1F1F1" height="144.5391" id="CheckAndExportStore" rx="1.75" ry="1.75" style="stroke:#181818;stroke-width:0.3499999999999999;" width="357" x="4.9" y="266"/><ellipse cx="131.775" cy="277.2" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#181818;stroke-width:0.6999999999999998;"/><path d="M133.175,274.75 Q133.3172,274.4 133.4812,274.225 Q133.6453,274.05 133.8312,274.05 Q134.1594,274.05 134.3672,274.2469 Q134.575,274.4437 134.575,274.9031 L134.575,275.9969 Q134.575,276.4562 134.3781,276.6531 Q134.1812,276.85 133.875,276.85 Q133.6016,276.85 133.4266,276.7297 Q133.2516,276.6094 133.175,276.2922 Q133.1422,276.0734 133.0219,275.9531 Q132.8031,275.7234 132.4094,275.5922 Q132.0156,275.45 131.6219,275.45 Q131.1297,275.45 130.7141,275.6469 Q130.3094,275.8437 129.9922,276.2812 Q129.675,276.7187 129.675,277.3203 L129.675,277.9656 Q129.675,278.6875 130.2656,279.1687 Q130.8562,279.65 131.9062,279.65 Q132.5297,279.65 132.9672,279.5078 Q133.2187,279.4312 133.5031,279.1797 Q133.6891,279.0375 133.7875,278.9937 Q133.8859,278.95 134.0062,278.95 Q134.2359,278.95 134.4,279.1359 Q134.575,279.3109 134.575,279.5625 Q134.575,279.8031 134.3344,280.0875 Q133.9844,280.5031 133.4266,280.7328 Q132.6937,281.05 131.7969,281.05 Q130.7469,281.05 129.9047,280.6344 Q129.2266,280.3062 128.7453,279.5953 Q128.275,278.8844 128.275,278.0422 L128.275,277.2766 Q128.275,276.4016 128.6906,275.6359 Q129.1172,274.8703 129.85,274.4656 Q130.5937,274.05 131.425,274.05 Q131.9281,274.05 132.3656,274.225 Q132.8031,274.4 133.175,274.75 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="97.3" x="146.125" y="281.21">CheckAndExportStore</text><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="5.6" x2="361.2" y1="288.4" y2="288.4"/><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="5.6" x2="361.2" y1="294" y2="294"/><ellipse cx="12.6" cy="301.7" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="186.9" x="18.9" y="306.9732">checkIntervalTimeRules(dayInitial,dayEnd)</text><ellipse cx="12.6" cy="314.0266" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="114.8" x="18.9" y="319.2998">getText(dayInitial,dayEnd)</text><ellipse cx="12.6" cy="326.3531" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="91" x="18.9" y="331.6264">saveSystem(file,text)</text><rect fill="#F24D5C" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="10.5" y="336.5797"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="114.1" x="18.9" y="343.9529">checkDayRules(dayInitial)</text><rect fill="#F24D5C" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="10.5" y="348.9062"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="71.4" x="18.9" y="356.2795">isLapYear(year)</text><rect fill="#F24D5C" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="10.5" y="361.2328"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="202.3" x="18.9" y="368.6061">verifieDateParametersInLapYear(dayy,month)</text><rect fill="#F24D5C" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="10.5" y="373.5594"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="216.3" x="18.9" y="380.9326">verifieDateParametersInNormalYear(dayy,month)</text><rect fill="#F24D5C" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="10.5" y="385.8859"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="157.5" x="18.9" y="393.2592">checkDayInterval(dayInitial,dayEnd)</text><rect fill="#F24D5C" height="4.2" style="stroke:#C82930;stroke-width:0.6999999999999998;" width="4.2" x="10.5" y="398.2125"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="338.8" x="18.9" y="405.5857">doListOfVaccinationStatistics(getVaccinationEventList,dayEnd,dayEnd,email)</text></g><!--MD5=[02e4b9b7573f1156f41e60aa5b4e25a4]
+class Company--><g id="elem_Company"><rect codeLine="22" fill="#F1F1F1" height="58.2531" id="Company" rx="1.75" ry="1.75" style="stroke:#181818;stroke-width:0.3499999999999999;" width="139.3" x="386.75" y="309.05"/><ellipse cx="432.425" cy="320.25" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#181818;stroke-width:0.6999999999999998;"/><path d="M433.825,317.8 Q433.9672,317.45 434.1312,317.275 Q434.2953,317.1 434.4812,317.1 Q434.8094,317.1 435.0172,317.2969 Q435.225,317.4937 435.225,317.9531 L435.225,319.0469 Q435.225,319.5062 435.0281,319.7031 Q434.8312,319.9 434.525,319.9 Q434.2516,319.9 434.0766,319.7797 Q433.9016,319.6594 433.825,319.3422 Q433.7922,319.1234 433.6719,319.0031 Q433.4531,318.7734 433.0594,318.6422 Q432.6656,318.5 432.2719,318.5 Q431.7797,318.5 431.3641,318.6969 Q430.9594,318.8937 430.6422,319.3312 Q430.325,319.7687 430.325,320.3703 L430.325,321.0156 Q430.325,321.7375 430.9156,322.2187 Q431.5062,322.7 432.5562,322.7 Q433.1797,322.7 433.6172,322.5578 Q433.8687,322.4812 434.1531,322.2297 Q434.3391,322.0875 434.4375,322.0437 Q434.5359,322 434.6562,322 Q434.8859,322 435.05,322.1859 Q435.225,322.3609 435.225,322.6125 Q435.225,322.8531 434.9844,323.1375 Q434.6344,323.5531 434.0766,323.7828 Q433.3437,324.1 432.4469,324.1 Q431.3969,324.1 430.5547,323.6844 Q429.8766,323.3562 429.3953,322.6453 Q428.925,321.9344 428.925,321.0922 L428.925,320.3266 Q428.925,319.4516 429.3406,318.6859 Q429.7672,317.9203 430.5,317.5156 Q431.2437,317.1 432.075,317.1 Q432.5781,317.1 433.0156,317.275 Q433.4531,317.45 433.825,317.8 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="42" x="446.775" y="324.26">Company</text><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="387.45" x2="525.35" y1="331.45" y2="331.45"/><ellipse cx="394.45" cy="339.15" fill="none" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="111.3" x="400.75" y="344.4232">getCheckAndExportStore</text><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="387.45" x2="525.35" y1="349.3766" y2="349.3766"/><ellipse cx="394.45" cy="357.0766" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="121.1" x="400.75" y="362.3498">getVaccinationEventStore()</text></g><!--MD5=[4987b58ad1e35befaada756600d3695d]
+class VaccinationEventStore--><g id="elem_VaccinationEventStore"><rect codeLine="27" fill="#F1F1F1" height="45.9266" id="VaccinationEventStore" rx="1.75" ry="1.75" style="stroke:#181818;stroke-width:0.3499999999999999;" width="123.9" x="550.55" y="315"/><ellipse cx="561.68" cy="326.2" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#181818;stroke-width:0.6999999999999998;"/><path d="M563.08,323.75 Q563.2222,323.4 563.3862,323.225 Q563.5503,323.05 563.7362,323.05 Q564.0644,323.05 564.2722,323.2469 Q564.48,323.4437 564.48,323.9031 L564.48,324.9969 Q564.48,325.4562 564.2831,325.6531 Q564.0862,325.85 563.78,325.85 Q563.5066,325.85 563.3316,325.7297 Q563.1566,325.6094 563.08,325.2922 Q563.0472,325.0734 562.9269,324.9531 Q562.7081,324.7234 562.3144,324.5922 Q561.9206,324.45 561.5269,324.45 Q561.0347,324.45 560.6191,324.6469 Q560.2144,324.8437 559.8972,325.2812 Q559.58,325.7187 559.58,326.3203 L559.58,326.9656 Q559.58,327.6875 560.1706,328.1687 Q560.7612,328.65 561.8112,328.65 Q562.4347,328.65 562.8722,328.5078 Q563.1237,328.4312 563.4081,328.1797 Q563.5941,328.0375 563.6925,327.9937 Q563.7909,327.95 563.9112,327.95 Q564.1409,327.95 564.305,328.1359 Q564.48,328.3109 564.48,328.5625 Q564.48,328.8031 564.2394,329.0875 Q563.8894,329.5031 563.3316,329.7328 Q562.5987,330.05 561.7019,330.05 Q560.6519,330.05 559.8097,329.6344 Q559.1316,329.3062 558.6503,328.5953 Q558.18,327.8844 558.18,327.0422 L558.18,326.2766 Q558.18,325.4016 558.5956,324.6359 Q559.0222,323.8703 559.755,323.4656 Q560.4987,323.05 561.33,323.05 Q561.8331,323.05 562.2706,323.225 Q562.7081,323.4 563.08,323.75 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="100.1" x="571.62" y="330.21">VaccinationEventStore</text><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="551.25" x2="673.75" y1="337.4" y2="337.4"/><ellipse cx="558.25" cy="345.1" fill="none" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="105.7" x="564.55" y="350.3732">getVaccinationEventList</text><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="551.25" x2="673.75" y1="355.3266" y2="355.3266"/></g><!--MD5=[335f4d9be48430461c68bf6d6fdba145]
+class App--><g id="elem_App"><rect codeLine="31" fill="#F1F1F1" height="82.9062" id="App" rx="1.75" ry="1.75" style="stroke:#181818;stroke-width:0.3499999999999999;" width="128.1" x="119.35" y="494.9"/><ellipse cx="171.675" cy="506.1" fill="#ADD1B2" rx="7.7" ry="7.7" style="stroke:#181818;stroke-width:0.6999999999999998;"/><path d="M173.075,503.65 Q173.2172,503.3 173.3812,503.125 Q173.5453,502.95 173.7312,502.95 Q174.0594,502.95 174.2672,503.1469 Q174.475,503.3437 174.475,503.8031 L174.475,504.8969 Q174.475,505.3562 174.2781,505.5531 Q174.0812,505.75 173.775,505.75 Q173.5016,505.75 173.3266,505.6297 Q173.1516,505.5094 173.075,505.1922 Q173.0422,504.9734 172.9219,504.8531 Q172.7031,504.6234 172.3094,504.4922 Q171.9156,504.35 171.5219,504.35 Q171.0297,504.35 170.6141,504.5469 Q170.2094,504.7437 169.8922,505.1812 Q169.575,505.6187 169.575,506.2203 L169.575,506.8656 Q169.575,507.5875 170.1656,508.0687 Q170.7562,508.55 171.8062,508.55 Q172.4297,508.55 172.8672,508.4078 Q173.1187,508.3312 173.4031,508.0797 Q173.5891,507.9375 173.6875,507.8937 Q173.7859,507.85 173.9062,507.85 Q174.1359,507.85 174.3,508.0359 Q174.475,508.2109 174.475,508.4625 Q174.475,508.7031 174.2344,508.9875 Q173.8844,509.4031 173.3266,509.6328 Q172.5937,509.95 171.6969,509.95 Q170.6469,509.95 169.8047,509.5344 Q169.1266,509.2062 168.6453,508.4953 Q168.175,507.7844 168.175,506.9422 L168.175,506.1766 Q168.175,505.3016 168.5906,504.5359 Q169.0172,503.7703 169.75,503.3656 Q170.4937,502.95 171.325,502.95 Q171.8281,502.95 172.2656,503.125 Q172.7031,503.3 173.075,503.65 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="17.5" x="186.025" y="510.11">App</text><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="120.05" x2="246.75" y1="517.3" y2="517.3"/><line style="stroke:#181818;stroke-width:0.3499999999999999;" x1="120.05" x2="246.75" y1="522.9" y2="522.9"/><ellipse cx="127.05" cy="530.6" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="58.1" x="133.35" y="535.8732">getInstance()</text><ellipse cx="127.05" cy="542.9266" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="109.9" x="133.35" y="548.1998">getCurrentUserSession()</text><ellipse cx="127.05" cy="555.2531" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="50.4" x="133.35" y="560.5264">getUserID()</text><ellipse cx="127.05" cy="567.5797" fill="#84BE84" rx="2.1" ry="2.1" style="stroke:#038048;stroke-width:0.6999999999999998;"/><text fill="#000000" font-family="sans-serif" font-size="9.8" lengthAdjust="spacing" textLength="44.8" x="133.35" y="572.8529">getEmail()</text></g><!--MD5=[18894fa51c41223f5a244e6680f69a54]
+link CheckAndExportUI to CheckAndExportController--><g id="link_CheckAndExportUI_CheckAndExportController"><path codeLine="38" d="M456.4,38.759 C456.4,58.94 456.4,93.73 456.4,119.35 " fill="none" id="CheckAndExportUI-to-CheckAndExportController" style="stroke:#181818;stroke-width:0.6999999999999998;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="456.4,123.06,459.2,116.76,456.4,119.56,453.6,116.76,456.4,123.06" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[8d1ecdb33f8f0b1b80f484cf7f1c43d5]
+link CheckAndExportController to Company--><g id="link_CheckAndExportController_Company"><path codeLine="40" d="M456.4,181.363 C456.4,214.879 456.4,270.431 456.4,305.424 " fill="none" id="CheckAndExportController-to-Company" style="stroke:#181818;stroke-width:0.6999999999999998;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="456.4,308.952,459.2,302.652,456.4,305.452,453.6,302.652,456.4,308.952" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[1490c06e902e7f148706f99449362cec]
+link CheckAndExportController to VaccinationEventStore--><g id="link_CheckAndExportController_VaccinationEventStore"><path codeLine="41" d="M480.452,181.363 C510.643,217.049 561.988,277.718 590.954,311.948 " fill="none" id="CheckAndExportController-to-VaccinationEventStore" style="stroke:#181818;stroke-width:0.6999999999999998;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="593.348,314.769,591.4149,308.1514,591.0868,312.0975,587.1406,311.7693,593.348,314.769" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[324d799e064a2d15053732e673235ed5]
+link CheckAndExportController to CheckAndExportStore--><g id="link_CheckAndExportController_CheckAndExportStore"><path codeLine="42" d="M414.344,181.363 C381.773,203.371 335.125,234.885 292.271,263.844 " fill="none" id="CheckAndExportController-to-CheckAndExportStore" style="stroke:#181818;stroke-width:0.6999999999999998;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="289.198,265.923,295.9856,264.7151,292.0978,263.9631,292.8498,260.0754,289.198,265.923" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[4615f7e1af1f8ecfa13cedc45d373e59]
+link CheckAndExportStore to App--><g id="link_CheckAndExportStore_App"><path codeLine="44" d="M183.4,410.368 C183.4,437.374 183.4,467.299 183.4,491.106 " fill="none" id="CheckAndExportStore-to-App" style="stroke:#181818;stroke-width:0.6999999999999998;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="183.4,494.872,186.2,488.572,183.4,491.372,180.6,488.572,183.4,494.872" style="stroke:#181818;stroke-width:0.6999999999999998;"/></g><!--MD5=[1363bac7b7e58f6d0f4082de539261d7]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class CheckAndExportUI{}
+
+class CheckAndExportController{
++getVaccinationStatistics()
++saveToFile(file,text)
+}
+
+class CheckAndExportStore{
++checkIntervalTimeRules(dayInitial,dayEnd)
++getText(dayInitial,dayEnd)
++saveSystem(file,text)
+-checkDayRules(dayInitial)
+-isLapYear(year)
+-verifieDateParametersInLapYear(dayy,month)
+-verifieDateParametersInNormalYear(dayy,month)
+-checkDayInterval(dayInitial,dayEnd)
+-doListOfVaccinationStatistics(getVaccinationEventList,dayEnd,dayEnd,email)
+}
+
+class Company{
++getVaccinationEventStore()
++getCheckAndExportStore
+}
+
+class VaccinationEventStore{
++getVaccinationEventList
+}
+
+class App{
++getInstance()
++getCurrentUserSession()
++getUserID()
++getEmail()
+}
+
+CheckAndExportUI.- ->CheckAndExportController
+
+CheckAndExportController.- ->Company
+CheckAndExportController.- ->VaccinationEventStore
+CheckAndExportController.- ->CheckAndExportStore
+
+CheckAndExportStore.- ->App
+
+
+@enduml
+
+@startuml
+
+class CheckAndExportUI{}
+
+class CheckAndExportController{
++getVaccinationStatistics()
++saveToFile(file,text)
+}
+
+class CheckAndExportStore{
++checkIntervalTimeRules(dayInitial,dayEnd)
++getText(dayInitial,dayEnd)
++saveSystem(file,text)
+-checkDayRules(dayInitial)
+-isLapYear(year)
+-verifieDateParametersInLapYear(dayy,month)
+-verifieDateParametersInNormalYear(dayy,month)
+-checkDayInterval(dayInitial,dayEnd)
+-doListOfVaccinationStatistics(getVaccinationEventList,dayEnd,dayEnd,email)
+}
+
+class Company{
++getVaccinationEventStore()
++getCheckAndExportStore
+}
+
+class VaccinationEventStore{
++getVaccinationEventList
+}
+
+class App{
++getInstance()
++getCurrentUserSession()
++getUserID()
++getEmail()
+}
+
+CheckAndExportUI.- ->CheckAndExportController
+
+CheckAndExportController.- ->Company
+CheckAndExportController.- ->VaccinationEventStore
+CheckAndExportController.- ->CheckAndExportStore
+
+CheckAndExportStore.- ->App
+
+
+@enduml
+
+PlantUML version 1.2022.4(Sat Apr 09 14:29:17 BST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

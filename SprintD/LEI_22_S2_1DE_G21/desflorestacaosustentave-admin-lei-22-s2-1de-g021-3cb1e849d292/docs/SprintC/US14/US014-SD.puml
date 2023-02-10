@@ -1,0 +1,98 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor "Administrator" as Administrator
+participant "RegisterUsersFromCSVUI" as RegisterUsersFromCSVUI
+participant "RegisterUsersFromCSVController" as RegisterUserFromCSVController
+participant "Company" as Company
+participant "store: SNSUserStore" as SNSUserStore
+participant "dto: SNSUserDto" as SNSUserDto
+participant "SNSUserMapper" as SNSUserMapper
+
+autonumber
+
+autonumber
+activate Administrator
+Administrator -> RegisterUsersFromCSVUI : Starts registering users from CSV file.
+activate RegisterUsersFromCSVUI
+RegisterUsersFromCSVUI --> Administrator : Request path to CSV file containing the users (pathToCSV)
+deactivate RegisterUsersFromCSVUI
+
+Administrator -> RegisterUsersFromCSVUI : Specify CSV file path
+activate RegisterUsersFromCSVUI
+RegisterUsersFromCSVUI -> RegisterUserFromCSVController : validatePathToCSV(pathToCSV)
+activate RegisterUserFromCSVController
+RegisterUserFromCSVController -> Company : store = getSNSUserStore()
+activate Company
+deactivate Company
+RegisterUserFromCSVController -> SNSUserStore : validatePathToCSV(pathToCSV)
+activate SNSUserStore
+SNSUserStore -> SNSUserStore : validatePathToCSV( CSV )
+activate SNSUserStore
+deactivate SNSUserStore
+deactivate SNSUserStore
+deactivate RegisterUserFromCSVController
+RegisterUsersFromCSVUI --> Administrator : Comfirms that the CSV exist
+deactivate RegisterUsersFromCSVUI
+
+Administrator -> RegisterUsersFromCSVUI : Confirms that wants to register users from this file
+activate RegisterUsersFromCSVUI
+RegisterUsersFromCSVUI -> RegisterUserFromCSVController : saveUsers(pathToCSV)
+activate RegisterUserFromCSVController
+RegisterUserFromCSVController -> SNSUserStore : saveUsers(pathToCSV)
+activate SNSUserStore
+
+SNSUserStore -> SNSUserStore : addUsers(pathToCSV)
+activate SNSUserStore
+deactivate SNSUserStore
+
+SNSUserStore -> SNSUserStore : verifyPathToCSV(pathToCSV)
+activate SNSUserStore
+deactivate
+
+
+create SNSUserDto
+
+loop for every user in CSV
+
+SNSUserStore -> SNSUserDto :  user = new SNSUserDto(Name, Sex, Birth date, Address, Phone Number, E-mail, SNS user number, Citizen card number)
+SNSUserStore -> SNSUserStore : validateUser(userDto)
+SNSUserStore -> SNSUserStore : validateAddress(userDto)
+
+note over SNSUserStore
+    more methods for the validation of the users
+end note
+
+SNSUserStore -> SNSUserStore : validateCitizenCardNumber(userDto)
+
+
+
+
+activate SNSUserStore
+deactivate SNSUserStore
+
+end
+
+alt all userDto are valid
+
+loop for every userdto registered
+SNSUserStore -> SNSUserMapper : User = toModel(userDto)
+activate SNSUserMapper
+create SNSUser
+SNSUserMapper -> SNSUser : toModel(user)
+deactivate SNSUserMapper
+
+end
+end
+
+SNSUserStore -> SNSUserStore : addUsersToSystem(userList)
+activate SNSUserStore
+deactivate SNSUserStore
+deactivate SNSUserStore
+
+
+deactivate RegisterUserFromCSVController
+RegisterUsersFromCSVUI -> Administrator : Confirms registration has been completed succesfully
+deactivate RegisterUsersFromCSVUI
+
+@enduml

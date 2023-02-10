@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="843px" preserveAspectRatio="none" style="width:1003px;height:843px;background:#FFFFFF;" version="1.1" viewBox="0 0 1003 843" width="1003px" zoomAndPan="magnify"><defs/><g><!--MD5=[02e4b9b7573f1156f41e60aa5b4e25a4]
+class Company--><g id="elem_Company"><rect codeLine="24" fill="#F1F1F1" height="65.6094" id="Company" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="267" x="72.5" y="451.5"/><ellipse cx="171.75" cy="467.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M173.75,464 Q173.9531,463.5 174.1875,463.25 Q174.4219,463 174.6875,463 Q175.1563,463 175.4531,463.2813 Q175.75,463.5625 175.75,464.2188 L175.75,465.7813 Q175.75,466.4375 175.4688,466.7188 Q175.1875,467 174.75,467 Q174.3594,467 174.1094,466.8281 Q173.8594,466.6563 173.75,466.2031 Q173.7031,465.8906 173.5313,465.7188 Q173.2188,465.3906 172.6563,465.2031 Q172.0938,465 171.5313,465 Q170.8281,465 170.2344,465.2813 Q169.6563,465.5625 169.2031,466.1875 Q168.75,466.8125 168.75,467.6719 L168.75,468.5938 Q168.75,469.625 169.5938,470.3125 Q170.4375,471 171.9375,471 Q172.8281,471 173.4531,470.7969 Q173.8125,470.6875 174.2188,470.3281 Q174.4844,470.125 174.625,470.0625 Q174.7656,470 174.9375,470 Q175.2656,470 175.5,470.2656 Q175.75,470.5156 175.75,470.875 Q175.75,471.2188 175.4063,471.625 Q174.9063,472.2188 174.1094,472.5469 Q173.0625,473 171.7813,473 Q170.2813,473 169.0781,472.4063 Q168.1094,471.9375 167.4219,470.9219 Q166.75,469.9063 166.75,468.7031 L166.75,467.6094 Q166.75,466.3594 167.3438,465.2656 Q167.9531,464.1719 169,463.5938 Q170.0625,463 171.25,463 Q171.9688,463 172.5938,463.25 Q173.2188,463.5 173.75,464 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="192.25" y="473.2285">Company</text><line style="stroke:#181818;stroke-width:0.5;" x1="73.5" x2="338.5" y1="483.5" y2="483.5"/><line style="stroke:#181818;stroke-width:0.5;" x1="73.5" x2="338.5" y1="491.5" y2="491.5"/><ellipse cx="83.5" cy="502.5" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="241" x="92.5" y="510.0332">getAnalyzeCenterPerformanceStore ()</text></g><!--MD5=[de60e6d4f424ae4d0522096f76a59010]
+class VaccinationCenter--><g id="elem_VaccinationCenter"><rect codeLine="38" fill="#F1F1F1" height="83.2188" id="VaccinationCenter" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="153" x="265.5" y="745"/><ellipse cx="282.75" cy="761" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M284.75,757.5 Q284.9531,757 285.1875,756.75 Q285.4219,756.5 285.6875,756.5 Q286.1563,756.5 286.4531,756.7813 Q286.75,757.0625 286.75,757.7188 L286.75,759.2813 Q286.75,759.9375 286.4688,760.2188 Q286.1875,760.5 285.75,760.5 Q285.3594,760.5 285.1094,760.3281 Q284.8594,760.1563 284.75,759.7031 Q284.7031,759.3906 284.5313,759.2188 Q284.2188,758.8906 283.6563,758.7031 Q283.0938,758.5 282.5313,758.5 Q281.8281,758.5 281.2344,758.7813 Q280.6563,759.0625 280.2031,759.6875 Q279.75,760.3125 279.75,761.1719 L279.75,762.0938 Q279.75,763.125 280.5938,763.8125 Q281.4375,764.5 282.9375,764.5 Q283.8281,764.5 284.4531,764.2969 Q284.8125,764.1875 285.2188,763.8281 Q285.4844,763.625 285.625,763.5625 Q285.7656,763.5 285.9375,763.5 Q286.2656,763.5 286.5,763.7656 Q286.75,764.0156 286.75,764.375 Q286.75,764.7188 286.4063,765.125 Q285.9063,765.7188 285.1094,766.0469 Q284.0625,766.5 282.7813,766.5 Q281.2813,766.5 280.0781,765.9063 Q279.1094,765.4375 278.4219,764.4219 Q277.75,763.4063 277.75,762.2031 L277.75,761.1094 Q277.75,759.8594 278.3438,758.7656 Q278.9531,757.6719 280,757.0938 Q281.0625,756.5 282.25,756.5 Q282.9688,756.5 283.5938,756.75 Q284.2188,757 284.75,757.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="297.25" y="766.7285">VaccinationCenter</text><line style="stroke:#181818;stroke-width:0.5;" x1="266.5" x2="417.5" y1="777" y2="777"/><line style="stroke:#181818;stroke-width:0.5;" x1="266.5" x2="417.5" y1="785" y2="785"/><ellipse cx="276.5" cy="796" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="285.5" y="803.5332">getWaitingRoom()</text><ellipse cx="276.5" cy="813.6094" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="285.5" y="821.1426">getRecoveryRoom()</text></g><!--MD5=[aaa7e27c4ec43917c82a021675d2c87a]
+class WaitingRoom--><g id="elem_WaitingRoom"><rect codeLine="28" fill="#F1F1F1" height="100.8281" id="WaitingRoom" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="274" x="454" y="736"/><ellipse cx="544.75" cy="752" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M546.75,748.5 Q546.9531,748 547.1875,747.75 Q547.4219,747.5 547.6875,747.5 Q548.1563,747.5 548.4531,747.7813 Q548.75,748.0625 548.75,748.7188 L548.75,750.2813 Q548.75,750.9375 548.4688,751.2188 Q548.1875,751.5 547.75,751.5 Q547.3594,751.5 547.1094,751.3281 Q546.8594,751.1563 546.75,750.7031 Q546.7031,750.3906 546.5313,750.2188 Q546.2188,749.8906 545.6563,749.7031 Q545.0938,749.5 544.5313,749.5 Q543.8281,749.5 543.2344,749.7813 Q542.6563,750.0625 542.2031,750.6875 Q541.75,751.3125 541.75,752.1719 L541.75,753.0938 Q541.75,754.125 542.5938,754.8125 Q543.4375,755.5 544.9375,755.5 Q545.8281,755.5 546.4531,755.2969 Q546.8125,755.1875 547.2188,754.8281 Q547.4844,754.625 547.625,754.5625 Q547.7656,754.5 547.9375,754.5 Q548.2656,754.5 548.5,754.7656 Q548.75,755.0156 548.75,755.375 Q548.75,755.7188 548.4063,756.125 Q547.9063,756.7188 547.1094,757.0469 Q546.0625,757.5 544.7813,757.5 Q543.2813,757.5 542.0781,756.9063 Q541.1094,756.4375 540.4219,755.4219 Q539.75,754.4063 539.75,753.2031 L539.75,752.1094 Q539.75,750.8594 540.3438,749.7656 Q540.9531,748.6719 542,748.0938 Q543.0625,747.5 544.25,747.5 Q544.9688,747.5 545.5938,747.75 Q546.2188,748 546.75,748.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="565.25" y="757.7285">WaitingRoom</text><line style="stroke:#181818;stroke-width:0.5;" x1="455" x2="727" y1="768" y2="768"/><line style="stroke:#181818;stroke-width:0.5;" x1="455" x2="727" y1="776" y2="776"/><ellipse cx="465" cy="787" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="474" y="794.5332">getArrivalTime()</text><ellipse cx="465" cy="804.6094" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="474" y="812.1426">getArrivalDate(LocalDate date)</text><ellipse cx="465" cy="822.2188" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="248" x="474" y="829.752">checkIfAnyoneEntered(LocalDate date)</text></g><!--MD5=[f24502e7c9b1056c4d1f73c3d80dda4c]
+class RecoveryRoom--><g id="elem_RecoveryRoom"><rect codeLine="34" fill="#F1F1F1" height="65.6094" id="RecoveryRoom" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="233" x="763.5" y="753.5"/><ellipse cx="827.25" cy="769.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M829.25,766 Q829.4531,765.5 829.6875,765.25 Q829.9219,765 830.1875,765 Q830.6563,765 830.9531,765.2813 Q831.25,765.5625 831.25,766.2188 L831.25,767.7813 Q831.25,768.4375 830.9688,768.7188 Q830.6875,769 830.25,769 Q829.8594,769 829.6094,768.8281 Q829.3594,768.6563 829.25,768.2031 Q829.2031,767.8906 829.0313,767.7188 Q828.7188,767.3906 828.1563,767.2031 Q827.5938,767 827.0313,767 Q826.3281,767 825.7344,767.2813 Q825.1563,767.5625 824.7031,768.1875 Q824.25,768.8125 824.25,769.6719 L824.25,770.5938 Q824.25,771.625 825.0938,772.3125 Q825.9375,773 827.4375,773 Q828.3281,773 828.9531,772.7969 Q829.3125,772.6875 829.7188,772.3281 Q829.9844,772.125 830.125,772.0625 Q830.2656,772 830.4375,772 Q830.7656,772 831,772.2656 Q831.25,772.5156 831.25,772.875 Q831.25,773.2188 830.9063,773.625 Q830.4063,774.2188 829.6094,774.5469 Q828.5625,775 827.2813,775 Q825.7813,775 824.5781,774.4063 Q823.6094,773.9375 822.9219,772.9219 Q822.25,771.9063 822.25,770.7031 L822.25,769.6094 Q822.25,768.3594 822.8438,767.2656 Q823.4531,766.1719 824.5,765.5938 Q825.5625,765 826.75,765 Q827.4688,765 828.0938,765.25 Q828.7188,765.5 829.25,766 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="847.75" y="775.2285">RecoveryRoom</text><line style="stroke:#181818;stroke-width:0.5;" x1="764.5" x2="995.5" y1="785.5" y2="785.5"/><line style="stroke:#181818;stroke-width:0.5;" x1="764.5" x2="995.5" y1="793.5" y2="793.5"/><ellipse cx="774.5" cy="804.5" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="207" x="783.5" y="812.0332">getLeavingTime(LocalDate date)</text></g><!--MD5=[38d5c3d1b070f4858ff477cf4e3c14fd]
+class AnalyzeCenterPerformanceUI--><g id="elem_AnalyzeCenterPerformanceUI"><rect codeLine="7" fill="#F1F1F1" height="48" id="AnalyzeCenterPerformanceUI" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="217" x="282.5" y="7"/><ellipse cx="297.5" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M299.5,19.5 Q299.7031,19 299.9375,18.75 Q300.1719,18.5 300.4375,18.5 Q300.9063,18.5 301.2031,18.7813 Q301.5,19.0625 301.5,19.7188 L301.5,21.2813 Q301.5,21.9375 301.2188,22.2188 Q300.9375,22.5 300.5,22.5 Q300.1094,22.5 299.8594,22.3281 Q299.6094,22.1563 299.5,21.7031 Q299.4531,21.3906 299.2813,21.2188 Q298.9688,20.8906 298.4063,20.7031 Q297.8438,20.5 297.2813,20.5 Q296.5781,20.5 295.9844,20.7813 Q295.4063,21.0625 294.9531,21.6875 Q294.5,22.3125 294.5,23.1719 L294.5,24.0938 Q294.5,25.125 295.3438,25.8125 Q296.1875,26.5 297.6875,26.5 Q298.5781,26.5 299.2031,26.2969 Q299.5625,26.1875 299.9688,25.8281 Q300.2344,25.625 300.375,25.5625 Q300.5156,25.5 300.6875,25.5 Q301.0156,25.5 301.25,25.7656 Q301.5,26.0156 301.5,26.375 Q301.5,26.7188 301.1563,27.125 Q300.6563,27.7188 299.8594,28.0469 Q298.8125,28.5 297.5313,28.5 Q296.0313,28.5 294.8281,27.9063 Q293.8594,27.4375 293.1719,26.4219 Q292.5,25.4063 292.5,24.2031 L292.5,23.1094 Q292.5,21.8594 293.0938,20.7656 Q293.7031,19.6719 294.75,19.0938 Q295.8125,18.5 297,18.5 Q297.7188,18.5 298.3438,18.75 Q298.9688,19 299.5,19.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="185" x="311.5" y="28.7285">AnalyzeCenterPerformanceUI</text><line style="stroke:#181818;stroke-width:0.5;" x1="283.5" x2="498.5" y1="39" y2="39"/><line style="stroke:#181818;stroke-width:0.5;" x1="283.5" x2="498.5" y1="47" y2="47"/></g><!--MD5=[e82fc61a69e8f3a3d4d074340a4dea7d]
+class AnalyzeCenterPerformanceDateAndIntervalController--><g id="elem_AnalyzeCenterPerformanceDateAndIntervalController"><rect codeLine="12" fill="#F1F1F1" height="118.4375" id="AnalyzeCenterPerformanceDateAndIntervalController" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="368" x="7" y="115"/><ellipse cx="22" cy="131" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M24,127.5 Q24.2031,127 24.4375,126.75 Q24.6719,126.5 24.9375,126.5 Q25.4063,126.5 25.7031,126.7813 Q26,127.0625 26,127.7188 L26,129.2813 Q26,129.9375 25.7188,130.2188 Q25.4375,130.5 25,130.5 Q24.6094,130.5 24.3594,130.3281 Q24.1094,130.1563 24,129.7031 Q23.9531,129.3906 23.7813,129.2188 Q23.4688,128.8906 22.9063,128.7031 Q22.3438,128.5 21.7813,128.5 Q21.0781,128.5 20.4844,128.7813 Q19.9063,129.0625 19.4531,129.6875 Q19,130.3125 19,131.1719 L19,132.0938 Q19,133.125 19.8438,133.8125 Q20.6875,134.5 22.1875,134.5 Q23.0781,134.5 23.7031,134.2969 Q24.0625,134.1875 24.4688,133.8281 Q24.7344,133.625 24.875,133.5625 Q25.0156,133.5 25.1875,133.5 Q25.5156,133.5 25.75,133.7656 Q26,134.0156 26,134.375 Q26,134.7188 25.6563,135.125 Q25.1563,135.7188 24.3594,136.0469 Q23.3125,136.5 22.0313,136.5 Q20.5313,136.5 19.3281,135.9063 Q18.3594,135.4375 17.6719,134.4219 Q17,133.4063 17,132.2031 L17,131.1094 Q17,129.8594 17.5938,128.7656 Q18.2031,127.6719 19.25,127.0938 Q20.3125,126.5 21.5,126.5 Q22.2188,126.5 22.8438,126.75 Q23.4688,127 24,127.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="336" x="36" y="136.7285">AnalyzeCenterPerformanceDateAndIntervalController</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="374" y1="147" y2="147"/><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="374" y1="155" y2="155"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="163"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="27" y="173.5332">validateDate()</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="180.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="27" y="191.1426">setMinutesPerInterval()</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="198.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="27" y="208.752">getDate()</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="215.8281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="27" y="226.3613">switchToScene2()</text></g><!--MD5=[4dec84a3b93c6b1658d9e9a67d6b1ab5]
+class AnalyzeCenterPerformanceCreateAnalysisController--><g id="elem_AnalyzeCenterPerformanceCreateAnalysisController"><rect codeLine="19" fill="#F1F1F1" height="83.2188" id="AnalyzeCenterPerformanceCreateAnalysisController" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="362" x="410" y="132.5"/><ellipse cx="425" cy="148.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M427,145 Q427.2031,144.5 427.4375,144.25 Q427.6719,144 427.9375,144 Q428.4063,144 428.7031,144.2813 Q429,144.5625 429,145.2188 L429,146.7813 Q429,147.4375 428.7188,147.7188 Q428.4375,148 428,148 Q427.6094,148 427.3594,147.8281 Q427.1094,147.6563 427,147.2031 Q426.9531,146.8906 426.7813,146.7188 Q426.4688,146.3906 425.9063,146.2031 Q425.3438,146 424.7813,146 Q424.0781,146 423.4844,146.2813 Q422.9063,146.5625 422.4531,147.1875 Q422,147.8125 422,148.6719 L422,149.5938 Q422,150.625 422.8438,151.3125 Q423.6875,152 425.1875,152 Q426.0781,152 426.7031,151.7969 Q427.0625,151.6875 427.4688,151.3281 Q427.7344,151.125 427.875,151.0625 Q428.0156,151 428.1875,151 Q428.5156,151 428.75,151.2656 Q429,151.5156 429,151.875 Q429,152.2188 428.6563,152.625 Q428.1563,153.2188 427.3594,153.5469 Q426.3125,154 425.0313,154 Q423.5313,154 422.3281,153.4063 Q421.3594,152.9375 420.6719,151.9219 Q420,150.9063 420,149.7031 L420,148.6094 Q420,147.3594 420.5938,146.2656 Q421.2031,145.1719 422.25,144.5938 Q423.3125,144 424.5,144 Q425.2188,144 425.8438,144.25 Q426.4688,144.5 427,145 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="330" x="439" y="154.2285">AnalyzeCenterPerformanceCreateAnalysisController</text><line style="stroke:#181818;stroke-width:0.5;" x1="411" x2="771" y1="164.5" y2="164.5"/><line style="stroke:#181818;stroke-width:0.5;" x1="411" x2="771" y1="172.5" y2="172.5"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="418" y="180.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="430" y="191.0332">back()</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="418" y="198.1094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="430" y="208.6426">confirm()</text></g><!--MD5=[2f545a71e794f18817151e0a152af61d]
+class AnalyzeCenterPerformanceStore--><g id="elem_AnalyzeCenterPerformanceStore"><rect codeLine="43" fill="#F1F1F1" height="382.5781" id="AnalyzeCenterPerformanceStore" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="404" x="389" y="293"/><ellipse cx="483.25" cy="309" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M485.25,305.5 Q485.4531,305 485.6875,304.75 Q485.9219,304.5 486.1875,304.5 Q486.6563,304.5 486.9531,304.7813 Q487.25,305.0625 487.25,305.7188 L487.25,307.2813 Q487.25,307.9375 486.9688,308.2188 Q486.6875,308.5 486.25,308.5 Q485.8594,308.5 485.6094,308.3281 Q485.3594,308.1563 485.25,307.7031 Q485.2031,307.3906 485.0313,307.2188 Q484.7188,306.8906 484.1563,306.7031 Q483.5938,306.5 483.0313,306.5 Q482.3281,306.5 481.7344,306.7813 Q481.1563,307.0625 480.7031,307.6875 Q480.25,308.3125 480.25,309.1719 L480.25,310.0938 Q480.25,311.125 481.0938,311.8125 Q481.9375,312.5 483.4375,312.5 Q484.3281,312.5 484.9531,312.2969 Q485.3125,312.1875 485.7188,311.8281 Q485.9844,311.625 486.125,311.5625 Q486.2656,311.5 486.4375,311.5 Q486.7656,311.5 487,311.7656 Q487.25,312.0156 487.25,312.375 Q487.25,312.7188 486.9063,313.125 Q486.4063,313.7188 485.6094,314.0469 Q484.5625,314.5 483.2813,314.5 Q481.7813,314.5 480.5781,313.9063 Q479.6094,313.4375 478.9219,312.4219 Q478.25,311.4063 478.25,310.2031 L478.25,309.1094 Q478.25,307.8594 478.8438,306.7656 Q479.4531,305.6719 480.5,305.0938 Q481.5625,304.5 482.75,304.5 Q483.4688,304.5 484.0938,304.75 Q484.7188,305 485.25,305.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="207" x="503.75" y="314.7285">AnalyzeCenterPerformanceStore</text><line style="stroke:#181818;stroke-width:0.5;" x1="390" x2="792" y1="325" y2="325"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="397" y="333"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="409" y="343.5332">minutesPerInterval</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="397" y="350.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="409" y="361.1426">intervals</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="397" y="368.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="409" y="378.752">date</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="397" y="385.8281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="409" y="396.3613">setVaccinationCenter</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="397" y="403.4375"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="409" y="413.9707">waitingRoom</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="397" y="421.0469"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="409" y="431.5801">recoveryRoom</text><line style="stroke:#181818;stroke-width:0.5;" x1="390" x2="792" y1="438.6563" y2="438.6563"/><ellipse cx="400" cy="449.6563" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="263" x="409" y="457.1895">setMinutesPerInterval(minutesPerInterval)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="397" y="464.2656"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="409" y="474.7988">setIntervals(minutesPerInterval)</text><ellipse cx="400" cy="484.875" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="409" y="492.4082">checkDayForAnalysis()</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="397" y="499.4844"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="409" y="510.0176">setVaccinationCenter()</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="397" y="517.0938"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="409" y="527.627">setWaitingRoom()</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="397" y="534.7031"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="409" y="545.2363">setRecoveryRoom()</text><ellipse cx="400" cy="555.3125" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="409" y="562.8457">createAnalysis()</text><ellipse cx="400" cy="572.9219" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="378" x="409" y="580.4551">saveDifferenceBetweenInAndOut(ArrivalTime, LeavingTime)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="397" y="587.5313"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="409" y="598.0645">chooseAlgorithm()</text><ellipse cx="400" cy="608.1406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="409" y="615.6738">intArrayToString(array)</text><ellipse cx="400" cy="625.75" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="409" y="633.2832">getIntervalsString()</text><ellipse cx="400" cy="643.3594" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="409" y="650.8926">getSum()</text><ellipse cx="400" cy="660.9688" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="409" y="668.502">subListString()</text></g><!--MD5=[64f02b034d2bada221fe24eeb5b654b9]
+link AnalyzeCenterPerformanceUI to AnalyzeCenterPerformanceDateAndIntervalController--><g id="link_AnalyzeCenterPerformanceUI_AnalyzeCenterPerformanceDateAndIntervalController"><path codeLine="66" d="M357.97,55.28 C335.98,70.79 305.98,91.94 277.48,112.03 " fill="none" id="AnalyzeCenterPerformanceUI-to-AnalyzeCenterPerformanceDateAndIntervalController" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="273.29,114.99,282.9489,113.0651,277.374,112.1055,278.3337,106.5306,273.29,114.99" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[183f310292ef95c37c3b31c957a3de43]
+link AnalyzeCenterPerformanceUI to AnalyzeCenterPerformanceCreateAnalysisController--><g id="link_AnalyzeCenterPerformanceUI_AnalyzeCenterPerformanceCreateAnalysisController"><path codeLine="67" d="M424.03,55.28 C452.49,75.35 494.36,104.87 529.05,129.32 " fill="none" id="AnalyzeCenterPerformanceUI-to-AnalyzeCenterPerformanceCreateAnalysisController" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="533.24,132.28,528.1963,123.8206,529.156,129.3955,523.5811,130.3551,533.24,132.28" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[6d6f20fd59f18cfb2429c59ee15c2488]
+link AnalyzeCenterPerformanceDateAndIntervalController to Company--><g id="link_AnalyzeCenterPerformanceDateAndIntervalController_Company"><path codeLine="69" d="M193.82,233.03 C196.86,295.46 201.6,392.92 204.18,445.98 " fill="none" id="AnalyzeCenterPerformanceDateAndIntervalController-to-Company" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="204.43,451.29,207.9887,442.1065,204.1874,446.2959,199.9981,442.4947,204.43,451.29" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[272c80af11d1a12f61d54ef0306e1ef3]
+link AnalyzeCenterPerformanceCreateAnalysisController to Company--><g id="link_AnalyzeCenterPerformanceCreateAnalysisController_Company"><path codeLine="71" d="M498.57,215.54 C457.68,235.74 410.3,262.4 372,293 C314.68,338.8 261.4,406.07 231.35,447.21 " fill="none" id="AnalyzeCenterPerformanceCreateAnalysisController-to-Company" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="228.34,451.35,236.8591,446.4079,231.2732,447.3008,230.3804,441.7148,228.34,451.35" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[cd7a70e6cd5ac346e927949c845febc7]
+link AnalyzeCenterPerformanceCreateAnalysisController to AnalyzeCenterPerformanceStore--><g id="link_AnalyzeCenterPerformanceCreateAnalysisController_AnalyzeCenterPerformanceStore"><path codeLine="72" d="M591,215.65 C591,235.36 591,260.64 591,287.76 " fill="none" id="AnalyzeCenterPerformanceCreateAnalysisController-to-AnalyzeCenterPerformanceStore" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="591,292.84,595,283.84,591,287.84,587,283.84,591,292.84" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[9a304779bcf1cd9ccb844ffb254ba704]
+link AnalyzeCenterPerformanceStore to VaccinationCenter--><g id="link_AnalyzeCenterPerformanceStore_VaccinationCenter"><path codeLine="74" d="M432.6,676.34 C412.8,700.19 394.25,722.55 379.14,740.75 " fill="none" id="AnalyzeCenterPerformanceStore-to-VaccinationCenter" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="375.78,744.8,384.5954,740.408,378.964,740.9449,378.4272,735.3136,375.78,744.8" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[920efba6e2ed15bc6014d831b035f8bd]
+link AnalyzeCenterPerformanceStore to WaitingRoom--><g id="link_AnalyzeCenterPerformanceStore_WaitingRoom"><path codeLine="75" d="M591,676.34 C591,695.86 591,714.38 591,730.44 " fill="none" id="AnalyzeCenterPerformanceStore-to-WaitingRoom" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="591,735.79,595,726.79,591,730.79,587,726.79,591,735.79" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[e23091ca4ce3fcb4d9c86a078ee5c84d]
+link AnalyzeCenterPerformanceStore to RecoveryRoom--><g id="link_AnalyzeCenterPerformanceStore_RecoveryRoom"><path codeLine="76" d="M774.85,676.34 C801.56,704.08 826.34,729.8 845.12,749.29 " fill="none" id="AnalyzeCenterPerformanceStore-to-RecoveryRoom" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="848.8,753.11,845.4322,743.8549,845.3293,749.5108,839.6734,749.4079,848.8,753.11" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[53a6eea7a88eb14b938ce1080875551b]
+@startuml
+'https://plantuml.com/class-diagram
+
+class Company
+class VaccinationCenter
+class WaitingRoom
+class RecoveryRoom
+class AnalyzeCenterPerformanceUI
+class AnalyzeCenterPerformanceDateAndIntervalController
+class AnalyzeCenterPerformanceCreateAnalysisController
+class AnalyzeCenterPerformanceStore
+
+class AnalyzeCenterPerformanceDateAndIntervalController {
+-validateDate()
+-setMinutesPerInterval()
+-getDate()
+-switchToScene2()
+}
+
+class AnalyzeCenterPerformanceCreateAnalysisController {
+-back()
+-confirm()
+}
+
+class Company {
++getAnalyzeCenterPerformanceStore ()
+}
+
+class WaitingRoom {
++getArrivalTime()
++getArrivalDate(LocalDate date)
++checkIfAnyoneEntered(LocalDate date)
+}
+
+class RecoveryRoom {
++getLeavingTime(LocalDate date)
+}
+
+class VaccinationCenter {
++getWaitingRoom()
++getRecoveryRoom()
+}
+
+class AnalyzeCenterPerformanceStore {
+-minutesPerInterval
+-intervals
+-date
+-setVaccinationCenter
+-waitingRoom
+-recoveryRoom
+
++setMinutesPerInterval(minutesPerInterval)
+-setIntervals(minutesPerInterval)
++checkDayForAnalysis()
+-setVaccinationCenter()
+-setWaitingRoom()
+-setRecoveryRoom()
++createAnalysis()
++saveDifferenceBetweenInAndOut(ArrivalTime, LeavingTime)
+-chooseAlgorithm()
++intArrayToString(array)
++getIntervalsString()
++getSum()
++subListString()
+}
+
+AnalyzeCenterPerformanceUI .-> AnalyzeCenterPerformanceDateAndIntervalController
+AnalyzeCenterPerformanceUI .-> AnalyzeCenterPerformanceCreateAnalysisController
+
+AnalyzeCenterPerformanceDateAndIntervalController .-> Company
+
+AnalyzeCenterPerformanceCreateAnalysisController .-> Company
+AnalyzeCenterPerformanceCreateAnalysisController .-> AnalyzeCenterPerformanceStore
+
+AnalyzeCenterPerformanceStore .-> VaccinationCenter
+AnalyzeCenterPerformanceStore .-> WaitingRoom
+AnalyzeCenterPerformanceStore .-> RecoveryRoom
+
+
+
+
+
+@enduml
+
+@startuml
+
+class Company
+class VaccinationCenter
+class WaitingRoom
+class RecoveryRoom
+class AnalyzeCenterPerformanceUI
+class AnalyzeCenterPerformanceDateAndIntervalController
+class AnalyzeCenterPerformanceCreateAnalysisController
+class AnalyzeCenterPerformanceStore
+
+class AnalyzeCenterPerformanceDateAndIntervalController {
+-validateDate()
+-setMinutesPerInterval()
+-getDate()
+-switchToScene2()
+}
+
+class AnalyzeCenterPerformanceCreateAnalysisController {
+-back()
+-confirm()
+}
+
+class Company {
++getAnalyzeCenterPerformanceStore ()
+}
+
+class WaitingRoom {
++getArrivalTime()
++getArrivalDate(LocalDate date)
++checkIfAnyoneEntered(LocalDate date)
+}
+
+class RecoveryRoom {
++getLeavingTime(LocalDate date)
+}
+
+class VaccinationCenter {
++getWaitingRoom()
++getRecoveryRoom()
+}
+
+class AnalyzeCenterPerformanceStore {
+-minutesPerInterval
+-intervals
+-date
+-setVaccinationCenter
+-waitingRoom
+-recoveryRoom
+
++setMinutesPerInterval(minutesPerInterval)
+-setIntervals(minutesPerInterval)
++checkDayForAnalysis()
+-setVaccinationCenter()
+-setWaitingRoom()
+-setRecoveryRoom()
++createAnalysis()
++saveDifferenceBetweenInAndOut(ArrivalTime, LeavingTime)
+-chooseAlgorithm()
++intArrayToString(array)
++getIntervalsString()
++getSum()
++subListString()
+}
+
+AnalyzeCenterPerformanceUI .-> AnalyzeCenterPerformanceDateAndIntervalController
+AnalyzeCenterPerformanceUI .-> AnalyzeCenterPerformanceCreateAnalysisController
+
+AnalyzeCenterPerformanceDateAndIntervalController .-> Company
+
+AnalyzeCenterPerformanceCreateAnalysisController .-> Company
+AnalyzeCenterPerformanceCreateAnalysisController .-> AnalyzeCenterPerformanceStore
+
+AnalyzeCenterPerformanceStore .-> VaccinationCenter
+AnalyzeCenterPerformanceStore .-> WaitingRoom
+AnalyzeCenterPerformanceStore .-> RecoveryRoom
+
+
+
+
+
+@enduml
+
+PlantUML version 1.2022.5(Sat Apr 30 11:55:52 BST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: GB
+--></g></svg>
