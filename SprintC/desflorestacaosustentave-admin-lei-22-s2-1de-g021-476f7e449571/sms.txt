@@ -1,0 +1,2 @@
+VacinneSchedule{SnsUser Number='987987987', Vaccination Center='CentroTeste1', Vaccine Type='Covid', Day='26/06/2022', Hour='16:00'}
+VacinneSchedule{SnsUser Number='987987987', Vaccination Center='CentroTeste2', Vaccine Type='Dengue', Day='26/06/2022', Hour='18:00'}
