@@ -1,0 +1,36 @@
+@startuml
+'https://plantuml.com/class-diagram
+'class enumeration
+class Organization
+class VaccinationCenter
+class CenterCoordinator  extends Employee
+class Employee
+class Nurse extends Employee
+class VaccinationCenterReceptionist extends Employee
+class Administrator
+
+'class componets
+class VaccinationCenter {
+-name
+-addres
+-phone number
+-e-mail addres
+-fax number
+-website addres
+-opening hours
+-closing hours
+-slot duration
+-maximum number of vaccines
+-coordinator
+}
+
+class Organization {
+-name
+}
+
+Organization "1" -- "*" VaccinationCenter : owns >
+Administrator "1" -- "1" Organization : works for >
+Employee "1..*" -- "1" VaccinationCenter : works for >
+Administrator "1" -- "1..*" Employee : registers >
+
+@enduml

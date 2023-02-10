@@ -1,0 +1,47 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+
+class Vaccine {
+  -String name
+  -String brand
+  -String type
+ +createVaccineAdministration(dosage, number of doses, min age group, max age group)
+ -createNewVaccine(name,brand,type)
+ -validateVaccine()
+}
+
+class VaccineAdministration {
+  -String dosage
+  -int minAgeGroup
+  -int maxAgeGroup
+  -int numberOfDoses
+  -validateVaccineAdministration()
+  -createVaccineAdministration(dosage, number of doses, min age group, max age group)
+}
+
+class Company {
+  -Vaccine
+  -VaccineAdministration
+  ---
+  +createNewVaccine(name,brand,type)
+  +createVaccineAdministration(dosage, number of doses, min age group, max age group)
+  -storeVaccineAndAministrationProcessData
+}
+
+
+class SpecifyNewVaccineAndAdministrationProcessController {
+- Vaccine
+  + createNewVaccine(name,brand,type)
+  + createVaccineAdministration(dosage, number of doses, min age group, max age group)
+}
+
+class SpecifyNewVaccineAndAdministrationProcessUI {
+}
+
+SpecifyNewVaccineAndAdministrationProcessUI ..> SpecifyNewVaccineAndAdministrationProcessController
+SpecifyNewVaccineAndAdministrationProcessController ..> Company
+Company "*" --> "1" VaccineAdministration : has
+Company "1" --> "*" Vaccine : has
+
+@enduml
