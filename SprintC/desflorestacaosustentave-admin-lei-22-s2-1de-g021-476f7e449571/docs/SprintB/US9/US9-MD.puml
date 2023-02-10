@@ -1,0 +1,46 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+skinparam usecase{
+
+BackgroundColor<< SprintC >> Red
+
+}
+class VaccinationCenter {
+-name
+-addres
+-phone number
+-e-mail addres
+-fax number
+-website addres
+-opening hours
+-closing hours
+-slot duration
+-maximum number of vaccines
+-coordinator
+}
+class Nurse
+class Company <<SprintC>>
+class CenterCoordinator
+
+class WaitingRoom
+class VaccinationCenterReceptionist
+
+
+
+
+
+WaitingRoom -- VaccinationCenter : from >
+Nurse -- VaccinationCenter : works for >
+CenterCoordinator -- VaccinationCenter : creates relatories of >
+Company -d- VaccinationCenter : owns >
+CenterCoordinator -u- Company : works for >
+VaccinationCenterReceptionist -- VaccinationCenter : works for >
+class Administrator
+Administrator -- Company : works for >
+Administrator -- Vaccine : can specify new >
+VaccinationCenterReceptionist -- WaitingRoom : send patient to >
+Administrator -- VaccinationCenter: **creates**
+
+
+
+@enduml

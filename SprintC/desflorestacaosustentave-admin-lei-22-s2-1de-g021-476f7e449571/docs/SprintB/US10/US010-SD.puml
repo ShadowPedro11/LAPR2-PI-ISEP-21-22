@@ -1,0 +1,55 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor Administrator
+activate Administrator
+Administrator -> SpecifyNewEmployeeUI : Starts specifying a new employee
+activate SpecifyNewEmployeeUI
+SpecifyNewEmployeeUI --> Administrator : Request employee data
+deactivate SpecifyNewEmployeeUI
+Administrator -> SpecifyNewEmployeeUI : Types new employee data
+activate SpecifyNewEmployeeUI
+
+SpecifyNewEmployeeUI -> SpecifyNewEmployeeController : registerNewEmployee(name, address, phoneNumber, citizenCardNumber, role)
+activate SpecifyNewEmployeeController
+SpecifyNewEmployeeController -> Company : et = registerNewEmployee(name, address, phoneNumber, citizenCardNumber, role)
+activate Company
+
+alt role = 1
+create Nurse
+Company -> Nurse : create(name, address, phoneNumber, citizenCardNumber)
+SpecifyNewEmployeeController -> Company : ValidatesType(et)
+
+else role = 2
+create Receptionist
+Company -> Receptionist : create(name, address, phoneNumber, citizenCardNumber)
+SpecifyNewEmployeeController -> Company : ValidatesType(et)
+
+else role = 3
+create CenterCoordinator
+Company -> CenterCoordinator : create(name, address, phoneNumber, citizenCardNumber)
+SpecifyNewEmployeeController -> Company : ValidatesType(et)
+
+end
+deactivate SpecifyNewEmployeeController
+deactivate Company
+
+Administrator <-- SpecifyNewEmployeeUI : Shows introducced data and request a confirmation
+deactivate SpecifyNewEmployeeUI
+Administrator -> SpecifyNewEmployeeUI : Comfirms the data
+activate SpecifyNewEmployeeUI
+
+SpecifyNewEmployeeUI -> SpecifyNewEmployeeController : saveNewEmployee()
+activate SpecifyNewEmployeeController
+SpecifyNewEmployeeController -> Company : saveNewEmployee(et)
+activate Company
+Company -> Company : validateEmployee(et)
+Company -> Company : addEmployee(et)
+deactivate Company
+deactivate SpecifyNewEmployeeController
+
+Administrator <-- SpecifyNewEmployeeUI : Confirms registrations has been done
+deactivate SpecifyNewEmployeeUI
+@enduml

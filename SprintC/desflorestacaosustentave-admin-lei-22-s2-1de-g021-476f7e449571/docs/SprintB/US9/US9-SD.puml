@@ -1,0 +1,48 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+@startuml
+autonumber
+
+actor Administrator
+activate Administrator
+Administrator -> RegisterVaccinationCenterUI: starts new vaccination center
+activate RegisterVaccinationCenterUI
+RegisterVaccinationCenterUI --> Administrator: request data(name, address,phone number, e-mail address,\n fax number, website address, opening hours, closing hours,\n slot duration, maximum number of vaccines per slot, Center Coordinator)
+deactivate RegisterVaccinationCenterUI
+Administrator -> RegisterVaccinationCenterUI: types requested data
+activate RegisterVaccinationCenterUI
+RegisterVaccinationCenterUI -> RegisterVaccinationCenterController: CreateVaccinationCenter(name, address,phone number, e-mail address,\n fax number, website address, opening hours, closing hours,\n slot duration, maximum number of vaccines per slot, Center Coordinator)
+activate RegisterVaccinationCenterController
+RegisterVaccinationCenterController -> ":Company": vc = createVaccinationCenter(name, address,phone number, e-mail address,\n fax number, website address, opening hours, closing hours,\n slot duration, maximum number of vaccines per slot, Center Coordinator)
+activate ":Company"
+":Company" --> ":vc: VaccinationCenter"**: create(name, address,phone number, e-mail address,\n fax number, website address, opening hours, closing hours,\n slot duration, maximum number of vaccines per slot, Center Coordinator)
+deactivate ":Company"
+RegisterVaccinationCenterController -> ":Company" : validateVaccinationCenter(vc)
+activate ":Company"
+deactivate ":Company"
+deactivate RegisterVaccinationCenterController
+RegisterVaccinationCenterUI --> Administrator: shows the data and requests a confirmation
+deactivate RegisterVaccinationCenterUI
+Administrator -> RegisterVaccinationCenterUI: confirms the data
+activate RegisterVaccinationCenterUI
+RegisterVaccinationCenterUI -> RegisterVaccinationCenterController: saveVaccinationCenter()
+activate RegisterVaccinationCenterController
+RegisterVaccinationCenterController -> ":Company": saveVaccinationCenter(vc)
+activate ":Company"
+":Company" -> ":Company": validateVaccinationCenter(vc)
+activate ":Company"
+deactivate ":Company"
+":Company" -> ":Company": addVaccinationCenter(vc)
+activate ":Company"
+deactivate ":Company"
+deactivate ":Company"
+deactivate RegisterVaccinationCenterController
+RegisterVaccinationCenterUI -> Administrator: informs operation success
+deactivate RegisterVaccinationCenterUI
+
+
+@enduml
+
+
+@enduml
