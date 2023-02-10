@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.ImportDataLegacySystemController">
+   <children>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="268.0" layoutY="107.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#enter" text="Submit" AnchorPane.leftAnchor="268.0" AnchorPane.rightAnchor="265.0" />
+      <TextField fx:id="textFieldCSVFile" layoutX="76.0" layoutY="63.0" prefHeight="31.0" prefWidth="452.0" promptText="Type CSV file path" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="72.0" />
+      <Button fx:id="yesButton" alignment="CENTER" contentDisplay="CENTER" layoutX="217.0" layoutY="224.0" mnemonicParsing="false" onAction="#switchToScene2" prefHeight="31.0" prefWidth="51.0" text="Yes" visible="false" AnchorPane.bottomAnchor="145.0" AnchorPane.leftAnchor="217.0" />
+      <Button fx:id="noButton" alignment="CENTER" contentDisplay="CENTER" layoutX="335.0" layoutY="224.0" mnemonicParsing="false" onAction="#actionNoButton" prefHeight="31.0" prefWidth="51.0" text="No" visible="false" AnchorPane.bottomAnchor="145.0" AnchorPane.rightAnchor="214.0" />
+      <Label fx:id="label1" alignment="CENTER" contentDisplay="CENTER" layoutX="139.0" layoutY="177.0" prefHeight="47.0" prefWidth="326.0" text="File exists. Do you want to load the data?" textAlignment="CENTER" visible="false" AnchorPane.bottomAnchor="176.0" AnchorPane.leftAnchor="139.0" AnchorPane.rightAnchor="135.0" AnchorPane.topAnchor="177.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

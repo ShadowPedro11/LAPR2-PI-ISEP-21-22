@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #343a40;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.CheckAndExportController">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="126.0" layoutY="328.0" prefHeight="33.0" prefWidth="149.0" style="-fx-text-fill: #dee2e6;" text="Start Date">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="526.0" layoutY="328.0" prefHeight="33.0" prefWidth="149.0" style="-fx-text-fill: #dee2e6;" text="End Date">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnCheck" alignment="CENTER" layoutX="325.0" layoutY="407.0" mnemonicParsing="false" onAction="#getVaccinationStatistics" prefHeight="64.0" prefWidth="150.0" style="-fx-background-color: #ced4da;" text="Check ">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Button>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" prefHeight="86.0" prefWidth="600.0" style="-fx-text-fill: #dee2e6;" text="Check and Export Data">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+      <DatePicker fx:id="strDate" layoutX="114.0" layoutY="363.0" promptText="Enter start date..." />
+      <DatePicker fx:id="edDate" layoutX="513.0" layoutY="363.0" promptText="Enter end date..." />
+      <TextArea fx:id="txtArea" layoutX="50.0" layoutY="63.0" prefHeight="268.0" prefWidth="700.0" promptText="The results will be presented here..." wrapText="true" />
+    </children>
+</Pane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="386.0" prefWidth="600.0" style="-fx-background-color: #343a40;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.gui.GetVaccinationCenterController">
+   <children>
+      <ListView fx:id="vaccinationcenterName" layoutY="-3.0" prefHeight="407.0" prefWidth="321.0" />
+      <Button layoutX="416.0" layoutY="309.0" mnemonicParsing="false" onAction="#SelectVaccinationCenter" prefHeight="61.0" prefWidth="104.0" text="Confirm" />
+   </children>
+</AnchorPane>

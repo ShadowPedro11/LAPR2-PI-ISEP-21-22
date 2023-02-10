@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.RecordAdministrationVaccineToUserController2">
+   <children>
+      <Button layoutX="199.0" layoutY="333.0" mnemonicParsing="false" onAction="#loadVaccines" text="Press Here To Confirm" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="170.0">
+         <font>
+            <Font name="Segoe UI" size="20.0" />
+         </font></Button>
+      <Label fx:id="vaccineLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" text="Select the vaccine that the user has taken">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listViewOfVaccine" editable="true" layoutX="65.0" layoutY="43.0" prefHeight="272.0" prefWidth="211.0" />
+      <TextField fx:id="vaccineLotNumber" layoutX="318.0" layoutY="200.0" promptText="Please write here" />
+      <Text fx:id="vaccineLotNumberText" layoutX="300.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please type the vaccine lot number">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

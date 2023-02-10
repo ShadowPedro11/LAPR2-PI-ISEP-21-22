@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.ImportDataLegacySystemController">
+   <children>
+      <RadioButton fx:id="ascendantRadioButton" layoutX="334.0" layoutY="46.0" mnemonicParsing="false" onAction="#getSortingTypeAscendDescend" text="Ascendant" AnchorPane.leftAnchor="334.0" AnchorPane.rightAnchor="169.0">
+         <toggleGroup>
+            <ToggleGroup fx:id="sortingTypeAscendDescend" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="descendantRadioButton" layoutX="334.0" layoutY="78.0" mnemonicParsing="false" onAction="#getSortingTypeAscendDescend" text="Descendant" toggleGroup="$sortingTypeAscendDescend" AnchorPane.leftAnchor="334.0" AnchorPane.rightAnchor="160.0" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="51.0" text="Back" textAlignment="CENTER" AnchorPane.leftAnchor="14.0" />
+      <RadioButton fx:id="leavingTimeRadioButton" layoutX="110.0" layoutY="78.0" mnemonicParsing="false" onAction="#getSortingTypeArrivalLeaving" prefHeight="21.0" prefWidth="120.0" text="Leaving Time" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="370.0">
+         <toggleGroup>
+            <ToggleGroup fx:id="sortingTypeArrivalLeaving" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="arrivalTimeRadioButton" layoutX="110.0" layoutY="47.0" mnemonicParsing="false" onAction="#getSortingTypeArrivalLeaving" text="Arrival Time" toggleGroup="$sortingTypeArrivalLeaving" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="384.0" />
+      <Button layoutX="538.0" layoutY="83.0" mnemonicParsing="false" onAction="#sortData" text="Sort" AnchorPane.rightAnchor="14.0" />
+      <TextArea fx:id="textArea1" editable="false" layoutX="16.0" layoutY="118.0" prefHeight="267.0" prefWidth="571.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="118.0" />
+      <Label layoutX="110.0" layoutY="19.0" prefHeight="21.0" prefWidth="155.0" text="Select the sorting type:" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="335.0" />
+      <Label layoutX="334.0" layoutY="19.0" prefHeight="21.0" prefWidth="181.0" text="Select the presenting type:" AnchorPane.leftAnchor="334.0" AnchorPane.rightAnchor="85.0" />
+   </children>
+</AnchorPane>

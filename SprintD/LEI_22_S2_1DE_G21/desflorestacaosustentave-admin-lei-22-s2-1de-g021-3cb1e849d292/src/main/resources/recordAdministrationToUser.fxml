@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="402.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.RecordAdministrationVaccineToUserController">
+   <children>
+      <TextField fx:id="textFieldForNumber" layoutX="176.0" layoutY="157.0" promptText="Please write here" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0">
+         <font>
+            <Font size="22.0" />
+         </font></TextField>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="199.0" layoutY="311.0" mnemonicParsing="false" onAction="#confirmationButton" text="Press Here To Confirm" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font></Button>
+      <Label fx:id="firstScreenLabel" alignment="CENTER" layoutX="64.0" layoutY="50.0" text="Please insert the SNS user number">
+         <font>
+            <Font name="Segoe UI Semilight" size="32.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="152.0" layoutY="246.0" mnemonicParsing="false" onAction="#seeUserData" text="Press Here To See The User's Data" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

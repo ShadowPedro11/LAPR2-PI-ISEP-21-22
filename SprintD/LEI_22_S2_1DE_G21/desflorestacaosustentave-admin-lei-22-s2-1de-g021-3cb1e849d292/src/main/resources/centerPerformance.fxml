@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.AnalyzeCenterPerformanceDateAndIntervalController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="93.0" text="Select the day for the analysis:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="vaccinationCenterName" layoutX="206.0" layoutY="29.0" text="Center Performance">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="253.0" layoutY="280.0" mnemonicParsing="false" onAction="#validateDate" prefHeight="41.0" prefWidth="94.0" text="Submit">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="23.0" layoutY="178.0" text="The duration of the intervals to analyse:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="intervalDuration" layoutX="392.0" layoutY="181.0" prefHeight="25.0" prefWidth="166.0" promptText="interval duration in minutes" />
+      <DatePicker fx:id="datePicker" layoutX="347.0" layoutY="96.0" onAction="#getDate" promptText="Enter a date" />
+   </children>
+</AnchorPane>

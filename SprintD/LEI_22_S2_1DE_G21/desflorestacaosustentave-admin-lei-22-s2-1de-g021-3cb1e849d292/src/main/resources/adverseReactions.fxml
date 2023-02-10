@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.RecordAdverseReactionsController">
+   <children>
+      <TextField fx:id="textFieldAdverseReactions" layoutX="188.0" layoutY="145.0" promptText="Please Write Here" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="130.0" />
+      <Label fx:id="adverseReactionsLabel" layoutX="121.0" layoutY="53.0" text="Please write the SNS user number">
+         <font>
+            <Font name="Segoe UI" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="130.0" layoutY="223.0" mnemonicParsing="false" onAction="#confirmationButton" text="Press Here To Confirm The User Number" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" />
+      <Button fx:id="saveButtonAdverseReactions" layoutX="75.0" layoutY="283.0" mnemonicParsing="false" onAction="#saveButton" text="Press Here To Save The Adverse Reactions To The User" visible="false" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" />
+   </children>
+</AnchorPane>
