@@ -1,0 +1,46 @@
+@startuml
+
+'class enumeration
+class WaitingRoom
+class SNSUser
+class Nurse
+class VaccinationCenter
+
+'class componets
+class SNSUser {
+-name
+-sex
+-Birth Date
+-Addresss
+-Phone number
+-E-mail
+-SNS number
+-Citizen card number
+}
+
+class VaccinationCenter {
+-name
+-addres
+-phone number
+-e-mail addres
+-fax number
+-website addres
+-opening hours
+-closing hours
+-slot duration
+-maximum number of vaccines
+-coordinator
+}
+
+'class relation
+
+Nurse "1..*" -- "1..*" SNSUser : checks if he/she is waiting >
+Nurse "1..*" -- "1..*" VaccinationCenter : works for >
+
+VaccinationCenter "1..*" -- "1..*" WaitingRoom : has >
+VaccinationCenter "1..*" -- "1..*" SNSUser : recieves >
+
+WaitingRoom "1..*" -- "1..*" SNSUser : for >
+Nurse "1..*" -- "1" WaitingRoom : consults patients >
+
+@enduml

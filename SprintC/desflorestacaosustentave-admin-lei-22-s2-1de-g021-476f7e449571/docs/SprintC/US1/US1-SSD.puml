@@ -1,0 +1,49 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+actor "SNS user"
+activate "SNS user"
+"SNS user" -> ":System": starts scheduling a vaccine
+activate ":System"
+":System" --> "SNS user": request data (Sns user number)
+deactivate ":System"
+"SNS user" -> ":System": types the requested data
+activate ":System"
+":System" --> "SNS user": Show the data and request a confirmation
+deactivate ":System"
+"SNS user" -> ":System":  Confirms the data
+activate ":System"
+":System" --> "SNS user": Show a list of Vaccination Center available
+deactivate ":System"
+"SNS user" -> ":System": Select a Vaccination Center
+activate ":System"
+":System" --> "SNS user": Show a list of Vaccine Type available
+deactivate ":System"
+"SNS user" -> ":System": Select a Vaccine Type
+activate ":System"
+":System" --> "SNS user": request data (day)
+deactivate ":System"
+"SNS user" -> ":System": types requested data
+activate ":System"
+":System" --> "SNS user": Show the data and request a confirmation
+deactivate ":System"
+"SNS user" -> ":System":  Confirms the data
+activate ":System"
+":System" --> "SNS user": Show the hours available to schedule the vaccine
+deactivate ":System"
+"SNS user" -> ":System": Select an hour
+activate ":System"
+":System" --> "SNS user": Shows the data and requests a confirmation
+deactivate ":System"
+"SNS user" -> ":System": confirms the data
+activate ":System"
+":System" --> "SNS user": Ask the user to receive a sms whit schedule data informations
+deactivate ":System"
+"SNS user" -> ":System": Types the answer(yes/no)
+activate ":System"
+":System" --> "SNS user": confirms operation success
+deactivate ":System"
+
+@enduml
+

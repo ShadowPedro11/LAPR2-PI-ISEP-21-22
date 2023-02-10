@@ -1,0 +1,21 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+activate Administrator
+Administrator -> System : Starts registering users from CSV file.
+activate System
+System --> Administrator : Request path to CSV file containing the users
+deactivate System
+
+Administrator -> System : Specify CSV file path
+activate System
+System --> Administrator : Comfirms that the CSV exist
+deactivate System
+
+Administrator -> System : Confirms that wants to register users from this file
+activate System
+System --> Administrator : Confirms registration has been completed succesfully
+deactivate System
+
+@enduml

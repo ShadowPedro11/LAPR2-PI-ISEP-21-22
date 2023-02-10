@@ -1,0 +1,90 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class SnsUserVaccineScheduleUI{
+}
+class SnsUserVaccineScheduleController{
++createVaccinationSchedule(snsUserNumber,vc,vt,day,hr)
++saveVaccinationSchedule()
++checkSnsUserNumber(snsUserNumber)
++sendMessage(snsUserNumber,vc,vt,day,hr)
++getVaccinationCenterList()
++getVaccineTypes()
++getTimeForSchedule()
++getNumVaccinesAvailable()
++chekSnsUserNumberRules(snsUserNumber)
++chekDayDateRules(day)
++readHour(vc,vt,day)
+}
+class Company {
+-designation
++getVacciantionCenterList()
++getVaccineTypesList()
++getHoursAvailable()
++getVaccineScheduleStore()
+}
+class SnsUserVaccineSchedule{
+-snsUserNumber
+-vaccinationCenter
+-vaccineType
+-day
+-hour
++vaccinationSchedule(snsUserNumber,vaccinationCenter,vaccineType,day,hour)
++toString()
++toDTO()
+}
+class SnsUserVaccineScheduleDTO{
++getSnsUserNumber()
++getVaccinationCenter()
++getVaccineType()
++getDay()
++getHour()
+}
+class VaccineScheduleStore{
++createVaccinationSchedule(snsUserNumber,vc,vt,day,hr)
++validateVaccinationSchedule(vcSkd)
++checkDuplicates(vcSkd)
++saveVaccinationSchedule(vcSkd)
++checkSnsUserNumber(snsUserNumber)
++checker(snsUserNumber,snsUserList,currentUserEmail)
++sendMessage(snsUserNumber,vc,vt,day,hr)
++getSnsUserVaccineShcheduleList()
++getTimeForSchedule()
++getNumVaccinesAvailable()
++chekSnsUserNumberRules(snsUserNumber)
++chekDayDateRules(day)
++verifieDateParametersInLeapYear(dayy,month)
++verifieDateParametersInNormalYear(dayy,month)
++isLeapYear(year)
++readHour(vc,vt,day)
+}
+class App{
++getEmail()
+}
+class SnsUserStore{
++getUserList()
+}
+class MassVaccinationCenter{
++getVaccineType
+}
+
+
+
+
+SnsUserVaccineScheduleUI .-> SnsUserVaccineScheduleController
+
+SnsUserVaccineScheduleController .-> Company
+SnsUserVaccineScheduleController .-> SnsUserVaccineSchedule
+SnsUserVaccineScheduleController .-> SnsUserVaccineScheduleDTO
+SnsUserVaccineScheduleController .-l> VaccineScheduleStore
+
+VaccineScheduleStore -> SnsUserVaccineSchedule
+VaccineScheduleStore .-r> SnsUserVaccineScheduleDTO
+VaccineScheduleStore .-l> App
+VaccineScheduleStore .-l> MassVaccinationCenter
+VaccineScheduleStore .-l> SnsUserStore
+
+SnsUserVaccineSchedule .-> SnsUserVaccineScheduleDTO
+
+
+@enduml

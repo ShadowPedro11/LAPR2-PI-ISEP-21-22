@@ -1,0 +1,37 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+class Nurse
+class WaitingRoom
+class CheckWaitingRoomUI
+class CheckWaitingRoomController
+class SNSUserDto
+class SNSUserMapper
+
+class WaitingRoom{
+-ArrayList<SNSUser> isInWaitingRoom
+-ArrayList<VaccinationCenter> whichCenterTheUserIsON
+
++getWaitingRoom(currentVC)
+}
+
+class SNSUserDto{
++getName()
++getSex()
++getBirthDate()
++getSNSUserNumber()
++getSNSUserPhoneNumber()
+}
+
+class SNSUserMapper{
++toDto()
+}
+
+
+CheckWaitingRoomUI .--> CheckWaitingRoomController
+CheckWaitingRoomController .--> WaitingRoom
+CheckWaitingRoomController .--> SNSUserDto
+Nurse "1..*" --> "1" WaitingRoom : consults patients >
+CheckWaitingRoomController .--> SNSUserMapper
+SNSUserDto --> SNSUserMapper
+@enduml

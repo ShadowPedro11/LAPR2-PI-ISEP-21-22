@@ -1,0 +1,79 @@
+@startuml
+
+class RegisterUserFromCSVUI
+class RegisterUserFromCSVController
+class Company
+class SNSUser
+class SNSUserStore
+class SNSUserDto
+class SNSUserMapper
+
+class Company {
+-designation
++getSNSUserStore()
+}
+
+class SNSUserStore {
+-userList
+-userListToVerify
+
++validatePathToCSV(pathToCSV)
++verifyCSV(pathToCSV)
++validateSNSUser(user)
+
+-validateName(user)
+-validateSex(user)
+-validateEmail(user)
+-validateAddress(user)
+-validateBirthDate(user)
+-validateCitizenCardNumber(user)
+-validatePhoneNumber(user)
+-validateSnsNumber(user)
+
++addUsers(pathToCSV)
+-addUser(pathToCSV)
+-addUsersToSystem(userList)
+}
+
+class RegisterUserFromCSVController {
++checkPathToUserCSV(pathToCSV)
++saveUsers(pathToCSV)
+}
+
+class SNSUser {
+-Name
+-Sex
+-Birth date
+-Address
+-Phone number
+-E-mail
+-SNS user number
+-Citizen card number
+-password
+}
+
+class SNSUserDto {
+-Name
+-Sex
+-Birth date
+-Address
+-Phone number
+-E-mail
+-SNS user number
+-Citizen card number
+}
+
+class SNSUserMapper {
++toModel(SNSUserDto)
++toDTO(SNSUser)
+}
+
+RegisterUserFromCSVUI .-> RegisterUserFromCSVController
+RegisterUserFromCSVController .-> Company
+Company .-> SNSUserStore
+RegisterUserFromCSVController .-> SNSUserStore
+Company "1" --> "1..*" SNSUser : has >
+SNSUserStore .-> SNSUserDto
+SNSUserStore .-> SNSUserMapper
+SNSUserMapper .-> SNSUser
+@enduml

@@ -1,0 +1,104 @@
+@startuml
+
+'class enumeration
+class Company
+class VaccinationCenter
+class VaccinationEvent
+class HealthCareCenterReceptionist
+class VaccinationCertificate
+class SNSUser <<SprintC>>
+class WaitingRoom
+class RecoveryRoom
+class HealthCareCenter
+class VaccinationCertificate
+class Notification
+class EmailNotification extends Notification
+class SMSNotification extends Notification
+class VaccineSchedule
+class Vaccine
+class Administrator <<SprintC>>
+
+class VaccineType <<SprintC>>
+
+
+package domain.model.employee {
+abstract Employee
+class Nurse extends Employee
+class VaccinationCenterReceptionist extends Employee
+class CenterCoordinator extends Employee
+}
+
+skinparam class {
+BackgroundColor<<SprintC>> Tomato
+}
+
+'class componets
+class SNSUser {
+-name
+-Age
+-sex
+-SNS number
+}
+
+class VaccinationCenter {
+-name
+-addres
+-phone number
+-e-mail addres
+-fax number
+-website addres
+-opening hours
+-closing hours
+-slot duration
+-maximum number of vaccines
+-coordinator
+}
+
+class Vaccine {
+-name
+-brand
+-type
+-age groups
+-vaccines per age group
+-dosage
+-time interval regarding previous vaccine administered
+}
+
+class Company {
+-name
+}
+
+'class relation
+Company "1" -- "*" VaccinationCenter : owns >
+Company "1" -- "*" HealthCareCenter : owns >
+Administrator "1" -- "1..*" Employee : registers >
+CenterCoordinator "1" -- "*" VaccinationCenter : creates relatories of >
+Administrator "1" -- "1" Company : works for >
+Administrator "1" -- "1..*" Vaccine : can specify new >
+Employee "1..*" -- "1" Company : works for >
+Nurse "1" -- "1..*" Vaccine : administer >
+VaccinationCenterReceptionist "1" -- "1" VaccineSchedule : checks for >
+HealthCareCenterReceptionist "1..*" -- "1" HealthCareCenter : works for >
+HealthCareCenterReceptionist "1..*" -- "*" VaccineSchedule : schedules >
+VaccinationEvent "1" -- "1" VaccineSchedule : fullfiling >
+Vaccine "1" -- "1" VaccinationEvent : of >
+SNSUser "1" -- "1" VaccineSchedule : schedules >
+Nurse "1..*" -- "*" VaccinationEvent : performs >
+VaccinationCenterReceptionist "1..*" -- "1" WaitingRoom : sends patient to >
+VaccinationCertificate "1" -- "1" VaccinationEvent : validates >
+Nurse "1..*" -- "1" RecoveryRoom : sends patient to >
+SNSUser "1" -- "1" Notification : recieves >
+SNSUser "1" -- "1..*" VaccinationCertificate : can request >
+RecoveryRoom "1" -- "*" SNSUser : for >
+RecoveryRoom "1" -- "1" VaccinationCenter : from >
+WaitingRoom "1" -- "1..*" SNSUser : for >
+WaitingRoom "1" -- "1" VaccinationCenter : from >
+
+Administrator "1" -- "1..*" SNSUser : **can register users from CSV file** >
+VaccinationCenter "1" -- "1..*" VaccineType : **contains** >
+Nurse "1..*" -- "1..*" WaitingRoom : checks >
+Company "1" -- "1..*" Vaccine : has >
+Vaccine "1..*" -- "1..*" VaccineType : is of >
+
+
+@enduml

@@ -1,0 +1,46 @@
+@startuml
+
+'class enumeration
+class WaitingRoom
+class VaccineSchedule
+
+package domain.model.employee {
+class Receptionist
+}
+
+'class componets
+class SNSUser {
+-SNS number
+}
+
+class Company {
+}
+
+class VaccineSchedule {
+- SNS number
+- Vaccination Center
+- Vaccine Type
+- Day
+- Hour
+}
+
+abstract VaccinationCenter {
+-name
+}
+'class relation
+
+Receptionist "1..*" -- "1..*" VaccineSchedule : can schedule >
+Receptionist "1..*" -- "1..*" SNSUser : checks arrival >
+Receptionist "1..*" -- "1..*" WaitingRoom : sends patient to >
+
+VaccinationCenter "1..*" -- "1..*" SNSUser : recieves >
+VaccinationCenter "1..*" -- "1..*" WaitingRoom : has >
+
+Company "1" -- "1..*" VaccinationCenter : has >
+Company "1" -- "*" SNSUser : has >
+
+SNSUser "1..*" -- "1..*" VaccineSchedule : can shedule >
+
+WaitingRoom "1..*" -- "1..*" SNSUser : for >
+
+@enduml

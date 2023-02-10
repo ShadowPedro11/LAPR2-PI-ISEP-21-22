@@ -1,0 +1,31 @@
+@startuml
+
+'class enumeration
+class Company
+class User
+class Administrator
+
+'class componets
+class User {
+-name
+-Age
+-sex
+-SNS number
+}
+
+class Company {
+-name
+}
+
+'class relation
+Administrator "1" -- "1" Company : works for >
+Administrator "1" -- "1..*" User : can register from CSV file >
+
+
+
+
+
+
+
+
+@enduml

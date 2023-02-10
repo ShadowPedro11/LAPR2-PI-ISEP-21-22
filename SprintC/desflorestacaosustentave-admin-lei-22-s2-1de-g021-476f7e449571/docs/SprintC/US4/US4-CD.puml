@@ -1,0 +1,48 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+
+class SNSUserStore {
+  -int SNSUserNumber
+  ---
+  +boolean verifyIfUserExists
+}
+
+class VaccineScheduleStore {
+  -int SNSUserNumber
+ ---
+ +boolean verifyIfUserHasSchedule
+ +String vaccineScheduledData
+}
+
+class WaitingRoom {
+-checkVaccinationCenter
+}
+
+class UserArrivalReceptionistController {
+  +verifyIfUserHasSchedule
+  +verifyIfUserExists
+  +getScheduleData
+  +checkIfUserIsInCorrectVC
+  +moveUserToWaitingRoom
+
+  }
+
+class ReceptinoistUI {
+}
+
+class UserArrivalReceptionistUI {
+}
+
+class Company {
+-getWaitingRoomStore
+}
+
+ReceptinoistUI ..> UserArrivalReceptionistUI
+UserArrivalReceptionistUI ..> UserArrivalReceptionistController
+UserArrivalReceptionistController ..> WaitingRoom
+UserArrivalReceptionistController ..> VaccineScheduleStore
+UserArrivalReceptionistController ..> SNSUserStore
+UserArrivalReceptionistController ..> Company
+
+@enduml
