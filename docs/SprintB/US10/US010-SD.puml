@@ -1,0 +1,27 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor Administrator
+Administrator -> SpecifyNewEmployeeUI : Starts specifying a new employee
+SpecifyNewEmployeeUI --> Administrator : Request employee data
+Administrator -> SpecifyNewEmployeeUI : Types new employee data
+
+SpecifyNewEmployeeUI -> SpecifyNewEmployeeController : registerNewEmployee(name, address, phoneNumber, citizenCardNumber)
+SpecifyNewEmployeeController -> Company : et = registerNewEmployee(name, address, phoneNumber, citizenCardNumber)
+
+create EmployeeType
+Company -> EmployeeType : create(name, address, phoneNumber, citizenCardNumber)
+SpecifyNewEmployeeController -> Company : ValidatesType(et)
+
+Administrator <-- SpecifyNewEmployeeUI : Shows introducced data and request a confirmation
+Administrator -> SpecifyNewEmployeeUI : Comfirms the data
+
+SpecifyNewEmployeeUI -> SpecifyNewEmployeeController : saveNewEmployee()
+SpecifyNewEmployeeController -> Company : saveNewEmployee(et)
+Company -> Company : validateEmployee(et)
+Company -> Company : addEmployee(et)
+
+Administrator <-- SpecifyNewEmployeeUI : Confirms registrations has been done
+@enduml

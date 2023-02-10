@@ -1,0 +1,45 @@
+@startuml
+
+'class enumeration
+class Organization
+class VaccinationCenter
+class Vaccine
+class Administrator
+
+'class componets
+
+class VaccinationCenter {
+-name
+-addres
+-phone number
+-e-mail addres
+-fax number
+-website addres
+-opening hours
+-closing hours
+-slot duration
+-maximum number of vaccines
+-coordinator
+}
+
+class Vaccine {
+-name
+-brand
+-type
+-age groups
+-vaccines per age group
+-dosage
+-time interval regarding previous vaccine administered
+}
+
+class Organization {
+-name
+}
+
+'class relation
+Organization -d- VaccinationCenter : owns >
+Administrator -- Organization : works for >
+Administrator -- Vaccine : can specify new >
+VaccinationCenter -- Vaccine : contains >
+
+@enduml

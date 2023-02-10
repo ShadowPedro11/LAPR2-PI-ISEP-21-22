@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Administrator -> System : Starts specifying a new employee
+Administrator <-- System : Request new employee data
+
+Administrator -> System : Types new employee data
+Administrator <-- System : Shows introducced data and request a confirmation
+
+Administrator -> System : Comfirms the data
+Administrator <-- System : Confirms registrations has been done
+
+@enduml
